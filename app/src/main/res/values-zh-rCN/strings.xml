@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Decoration</string>
+    <string name="login">"登录"</string>
+    <string name="regist">"注册"</string>
+    <string name="user_nick_notice">"请输入您的昵称"</string>
+    <string name="msg_resend_time">"36秒后重新获取"</string>
+</resources>

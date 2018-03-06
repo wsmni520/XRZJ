@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/back_text_title"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/im_regist_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/pic_user_login"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/im_regist_user_name"
+            android:hint="@string/user_nick_notice"
+            android:textColor="#ff0000"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/im_regist_user_phonenum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/pic_user_phone"/>
+
+        <TextView
+            android:id="@+id/tv_user_phonenum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:hint="@string/user_nick_notice"
+            android:layout_weight="1"
+            android:textColor="#ff0000"/>
+
+        <ImageView
+            android:id="@+id/im_regist_clear_phonenum"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/pic_login_clear_phonenum"
+            />
+
+        <TextView
+            android:id="@+id/tv_timer"
+            android:layout_width="50dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="8dp"
+            android:hint="@string/msg_resend_time"
+            android:textColor="#ff0000"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/im_regist_msg_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/pic_login_msg_code"
+            />
+
+        <TextView
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/im_regist_msg_code"
+            android:id="@+id/tv_regist_msg_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/msg_resend_time"
+            android:layout_centerVertical="true"
+            android:textColor="#ff0000"/>
+
+        <ImageView
+            android:layout_gravity=""
+            android:id="@+id/im_regist_clear_msg_code"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/pic_login_clear_phonenum"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/im_regist_user_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/pic_login_user_pwd"
+            />
+
+        <TextView
+            android:layout_marginStart="8dp"
+            android:id="@+id/tv_regist_user_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/msg_resend_time"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/im_regist_user_pwd"
+            android:textColor="#ff0000"/>
+
+        <ImageView
+            android:layout_gravity=""
+            android:id="@+id/im_regist_clear_user_pwd"
+            android:layout_toEndOf="@+id/im_regist__show_user_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/pic_login_clear_phonenum"
+            />
+        <ImageView
+            android:id="@+id/im_regist__show_user_pwd"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/pic_login_show_pwd"
+            />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="注册账号"
+        android:background="#edb991"/>
+
+</LinearLayout>
