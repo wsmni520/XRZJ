@@ -3,8 +3,12 @@ package com.xrzj.decoration.presenter.imp;
 
 import com.xrzj.decoration.presenter.ILoginPresenter;
 
-public class LoginPresenterImpl implements ILoginPresenter {
+/**
+ * @author: zhoufu
+ * @date: On 2018/3/5
+ */
 
+public class LoginPresenterImpl implements ILoginPresenter {
 
 	/**
 	 *

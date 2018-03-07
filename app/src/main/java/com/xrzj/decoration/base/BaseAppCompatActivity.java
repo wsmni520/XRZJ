@@ -12,10 +12,11 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
-
 /**
- *
+ * @author: zhoufu
+ * @date: On 2018/3/5
  */
+
 public abstract class BaseAppCompatActivity extends AppCompatActivity implements View.OnClickListener{
     /** 是否沉浸状态栏 **/
     private boolean isSetStatusBar = true;

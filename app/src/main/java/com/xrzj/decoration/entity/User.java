@@ -1,5 +1,9 @@
 package com.xrzj.decoration.entity;
 
+/**
+ * @author: zhoufu
+ * @date: On 2018/3/5
+ */
 
 
 public class User {

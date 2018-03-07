@@ -12,6 +12,10 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
+/**
+ * @author: zhoufu
+ * @date: On 2018/3/5
+ */
 
 public abstract class BaseFragmentActivity extends FragmentActivity implements
         View.OnClickListener {
