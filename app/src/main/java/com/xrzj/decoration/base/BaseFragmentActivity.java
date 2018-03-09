@@ -12,6 +12,8 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
+import com.xrzj.decoration.base.app.BaseApplication;
+
 /**
  * @author: zhoufu
  * @date: On 2018/3/5
@@ -38,8 +40,8 @@ public abstract class BaseFragmentActivity extends FragmentActivity implements
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        isDebug = MyApplication.isDebug;
-        APP_NAME = MyApplication.APP_NAME;
+        isDebug = BaseApplication.isDebug;
+        APP_NAME = BaseApplication.APP_NAME;
         $Log(TAG + "-->onCreate()");
         try {
             Bundle bundle = getIntent().getExtras();

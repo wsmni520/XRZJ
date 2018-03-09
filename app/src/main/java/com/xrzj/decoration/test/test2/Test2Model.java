@@ -14,8 +14,5 @@ public class Test2Model implements ITestModel2{
     @Override
     public void search(HashMap<String, String> map, final AsyncCallback callBack) {
         Log.d("Test2Model","search");
-
-
-
     }
 }

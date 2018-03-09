@@ -4,4 +4,14 @@
     <string name="regist">"注册"</string>
     <string name="user_nick_notice">"请输入您的昵称"</string>
     <string name="msg_resend_time">"36秒后重新获取"</string>
+
+    <string name="find_designer">"找设计师"</string>
+    <string name="find_manager">"找主管"</string>
+    <string name="find_supervisor">"找监理"</string>
+    <string name="find_material">"找材料"</string>
+    <string name="fix_home">"房医生"</string>
+    <string name="design_pics">"效果图"</string>
+    <string name="decoration_university">"装修大学"</string>
+    <string name="recreational">"休闲娱乐"</string>
+
 </resources>

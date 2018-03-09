@@ -1,7 +1,7 @@
 package com.xrzj.decoration.http;
 
 
-import com.xrzj.decoration.base.MyApplication;
+import com.xrzj.decoration.base.app.BaseApplication;
 import com.xrzj.decoration.cookie.JavaNetCookieJar;
 import com.xrzj.decoration.interceptor.HeaderInterceptor;
 import com.xrzj.decoration.interceptor.LogInterceptor;
@@ -29,7 +29,7 @@ public class MyOkHttpClient {
 
                     OkHttpClient.Builder okHttpClientBuilder = new OkHttpClient.Builder();
 
-                    if (MyApplication.isDebug) {
+                    if (BaseApplication.isDebug) {
                         /**
                          * debug模式下打印json
                          */

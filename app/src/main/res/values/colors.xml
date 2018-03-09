@@ -4,4 +4,14 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="white">#FFFFFF</color>
+    <color name="gray_black">#202020</color>
+    <!--字体的颜色 黑色1 -->
+    <color name="blackText1">#464C56</color>
+    <!--字体的颜色 黑色4-->
+    <color name="blackText4">#323232</color>
+    <!--背景 纯白色-->
+    <color name="colorWhite">#ffffff</color>
+    <!-- 灰色下划线 -->
+    <color name="grayLine">#e5e5e5</color>
+
 </resources>

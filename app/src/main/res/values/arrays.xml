@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--///////////////////////////////////////首页/////////////////////////////////////-->
+    <!--首页底部导航栏的标题，未选中时-->
+    <integer-array name="main_tab_un_select">
+        <item name="tab_home">@mipmap/tab_home_unselect</item>
+        <item name="tab_find">@mipmap/tab_speech_unselect</item>
+        <item name="tab_data">@mipmap/tab_contact_unselect</item>
+        <item name="tab_me">@mipmap/tab_more_unselect</item>
+    </integer-array>
+
+    <!--首页底部导航栏的标题，选中时-->
+    <integer-array name="main_tab_select">
+        <item name="tab_home">@mipmap/tab_home_select</item>
+        <item name="tab_find">@mipmap/tab_speech_select</item>
+        <item name="tab_data">@mipmap/tab_contact_select</item>
+        <item name="tab_me">@mipmap/tab_more_select</item>
+    </integer-array>
+
+    <!--首页底部导航栏文字-->
+    <string-array name="main_title">
+        <item>首页</item>
+        <item>工具</item>
+        <item>消息</item>
+        <item>用户</item>
+    </string-array>
+
+    <!--发现页图片-->
+    <integer-array name="find_gv_image">
+        <item>@mipmap/ic_category_16</item>
+        <item>@mipmap/ic_category_18</item>
+        <item>@mipmap/ic_category_2</item>
+        <item>@mipmap/ic_category_6</item>
+        <item>@mipmap/ic_category_27</item>
+        <item>@mipmap/ic_category_24</item>
+        <item>@mipmap/ic_category_22</item>
+        <item>@mipmap/ic_category_14</item>
+    </integer-array>
+    <!--发现页图片对应的位子-->
+    <string-array name="find_gv_title">
+        <item>@string/find_designer</item>
+        <item>@string/find_manager</item>
+        <item>@string/find_supervisor</item>
+        <item>@string/find_material</item>
+        <item>@string/fix_home</item>
+        <item>@string/design_pics</item>
+        <item>@string/decoration_university</item>
+        <item>@string/recreational</item>
+    </string-array>
+    <!--数据页横向滑动图片-->
+    <integer-array name="data_narrow_Image">
+        <item>@mipmap/bg_small_autumn_tree_min</item>
+        <item>@mipmap/bg_small_kites_min</item>
+        <item>@mipmap/bg_small_lake_min</item>
+        <item>@mipmap/bg_small_leaves_min</item>
+        <item>@mipmap/bg_small_magnolia_trees_min</item>
+        <item>@mipmap/bg_small_solda_min</item>
+    </integer-array>
+
+
+
+</resources>
