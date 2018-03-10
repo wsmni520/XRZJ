@@ -5,13 +5,22 @@
     <color name="colorAccent">#FF4081</color>
     <color name="white">#FFFFFF</color>
     <color name="gray_black">#202020</color>
-    <!--字体的颜色 黑色1 -->
-    <color name="blackText1">#464C56</color>
-    <!--字体的颜色 黑色4-->
-    <color name="blackText4">#323232</color>
-    <!--背景 纯白色-->
-    <color name="colorWhite">#ffffff</color>
-    <!-- 灰色下划线 -->
-    <color name="grayLine">#e5e5e5</color>
+    <!--首页-->
+    <!--主界面功能按钮字体颜色 -->
+    <color name="home_function_btn_text_color">#464C56</color>
+
+    <!--登录界面 -->
+    <!--登录注册输入框字体颜色-->
+    <color name="login_regist_et_text_color">#000000</color>
+
+    <!--注册界面-->
+    <color name="regist_btn_bacground">#ff6924</color>
+    <!--我的界面 -->
+    <!--左侧菜单栏文字颜色-->
+    <color name="me_menu_tv_text_color">#323232</color>
+
+    <!-- vlayout灰色下划线 -->
+    <color name="vl_item_divide_line_color">#e5e5e5</color>
+
 
 </resources>

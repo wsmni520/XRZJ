@@ -22,7 +22,7 @@
     <style name="DeepUnderLine">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">1px</item>
-        <item name="android:background">@color/grayLine</item>
+        <item name="android:background">@color/vl_item_divide_line_color</item>
     </style>
 
     <!--个人中心资料左边文字抽取-->
@@ -31,7 +31,33 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_centerVertical">true</item>
         <item name="android:textSize">16sp</item>
-        <item name="android:textColor">@color/blackText4</item>
+        <item name="android:textColor">@color/me_menu_tv_text_color</item>
+    </style>
+
+    <!--登录注册文本输入框字体样式-->
+    <style name="LoginRegistEditStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/login_regist_et_text_color</item>
+        <item name="android:background">@null</item>
+        <item name="android:inputType">text</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:drawablePadding">15dp</item>
+    </style>
+
+    <!--titleBar 标题-->
+    <style name="ToolBar.Title" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">@color/login_regist_et_text_color</item>
+    </style>
+
+    <!--titleBar 副标题-->
+    <style name="Toolbar.SubTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="android:textSize">9dp</item>
+        <item name="android:textColor">@color/login_regist_et_text_color</item>
     </style>
 
 

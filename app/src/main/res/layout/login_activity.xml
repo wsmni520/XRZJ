@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/back_text_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+
+        <EditText
+            android:id="@+id/login_user_name_edt"
+            style="@style/LoginRegistEditStyle"
+            android:drawableLeft="@mipmap/pic_user_phone"
+            android:hint="@string/user_nick_hint"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+
+        <EditText
+            android:id="@+id/login_user_pwd_edt"
+            style="@style/LoginRegistEditStyle"
+            android:drawableLeft="@mipmap/pic_login_msg_code"
+            android:inputType="textPassword"
+            android:hint="@string/regist_pwd_hint"/>
+
+
+        <ImageView
+            android:id="@+id/iv_login_show_user_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/pic_login_show_pwd"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:gravity="center_vertical">
+
+
+        <EditText
+            android:id="@+id/login_msg_code_edt"
+            style="@style/LoginRegistEditStyle"
+            android:drawableLeft="@mipmap/pic_login_msg_code"
+            android:inputType="number"
+            android:hint="@string/regist_msg_code_hint"/>
+
+
+        <Button
+            android:id="@+id/get_msg_code_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@color/vl_item_divide_line_color"
+            android:text="点击获取验证码"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="登录"
+        android:background="@color/vl_item_divide_line_color"/>
+
+</LinearLayout>

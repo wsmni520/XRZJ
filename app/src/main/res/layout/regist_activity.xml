@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/back_text_title"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <EditText
+            android:id="@+id/regist_user_name_edt"
+            style="@style/LoginRegistEditStyle"
+            android:drawableLeft="@mipmap/pic_user_login"
+            android:hint="@string/user_nick_hint"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/DeepUnderLine"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+
+        <EditText
+            android:id="@+id/et_regist_user_phone"
+            style="@style/LoginRegistEditStyle"
+            android:drawableLeft="@mipmap/pic_user_phone"
+            android:hint="@string/input_phonr_num_hint"
+            android:inputType="number"/>
+
+        <ImageView
+            android:id="@+id/iv_regist_clear_phonenum"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/pic_login_clear_phonenum"
+            />
+
+        <TextView
+            android:id="@+id/tv_send_msg"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dp"
+            android:gravity="center"
+            android:hint="@string/msg_resend_time"
+            android:textColor="#ff0000"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/DeepUnderLine"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <EditText
+            android:id="@+id/et_regist_msg_code"
+            style="@style/LoginRegistEditStyle"
+            android:drawableLeft="@mipmap/pic_login_msg_code"
+            android:hint="@string/regist_msg_code_hint"
+            android:inputType="number"/>
+
+        <ImageView
+            android:id="@+id/im_regist_clear_msg_code"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/pic_login_clear_phonenum"
+            />
+    </LinearLayout>
+
+    <View
+        style="@style/DeepUnderLine"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <EditText
+            android:id="@+id/et_regist_uer_pwd"
+            style="@style/LoginRegistEditStyle"
+            android:drawableLeft="@mipmap/pic_login_user_pwd"
+            android:inputType="textPassword"
+            android:hint="@string/regist_pwd_hint"/>
+
+
+        <ImageView
+            android:id="@+id/iv_regist_clear_user_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/pic_login_clear_phonenum"/>
+
+        <ImageView
+            android:id="@+id/im_regist_show_user_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/pic_login_show_pwd"
+            />
+    </LinearLayout>
+
+    <View
+        style="@style/DeepUnderLine"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <Button
+        android:id="@+id/btn_regist_account"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectangle_radius_shape"
+        android:text="注册账号"/>
+
+</LinearLayout>

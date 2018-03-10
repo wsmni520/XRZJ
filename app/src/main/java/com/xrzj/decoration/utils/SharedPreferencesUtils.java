@@ -3,7 +3,7 @@ package com.xrzj.decoration.utils;
 import android.content.Context;
 import android.util.Log;
 
-import com.xrzj.decoration.base.BaseSharedPreferences;
+import com.xrzj.decoration.base.uitls.BaseSharedPreferences;
 
 /**
  * @author: zhoufu
