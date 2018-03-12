@@ -23,4 +23,7 @@
     <string name="decoration_university">"装修大学"</string>
     <string name="recreational">"休闲娱乐"</string>
 
+    //找设计师
+    <string name="find_designer_title">"找设计师"</string>>
+
 </resources>

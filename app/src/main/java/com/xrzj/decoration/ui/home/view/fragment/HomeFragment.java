@@ -14,6 +14,7 @@ import com.xrzj.decoration.base.adapter.BaseDelegateAdapter;
 import com.xrzj.decoration.ui.home.contract.HomeContract;
 import com.xrzj.decoration.ui.home.presenter.HomePresenter;
 import com.xrzj.decoration.ui.main.view.MainActivity;
+import com.xrzj.decoration.ui.other.designer.view.FindDesignerActivity;
 import com.xrzj.decoration.utils.GlideImageLoader;
 import com.youth.banner.Banner;
 import com.youth.banner.BannerConfig;
@@ -90,6 +91,11 @@ public class HomeFragment extends BaseFragment<HomeContract.Presenter> implement
     }
 
     @Override
+    public void initListener() {
+
+    }
+
+    @Override
     public HomeContract.Presenter initPresenter() {
         return new HomePresenter(this);
     }
@@ -153,7 +159,7 @@ public class HomeFragment extends BaseFragment<HomeContract.Presenter> implement
     public void setFunctionButtonOnClick(int position) {
         switch (position){
             case 0:
-                Toast.makeText(mActivity,"0",Toast.LENGTH_SHORT).show();
+                startActivity(FindDesignerActivity.class);
                 break;
             case 1:
                 Toast.makeText(mActivity,"1",Toast.LENGTH_SHORT).show();

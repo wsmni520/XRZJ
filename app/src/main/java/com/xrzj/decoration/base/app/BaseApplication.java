@@ -22,7 +22,6 @@ public class BaseApplication extends Application {
 
     private static BaseApplication instance;
     //private RefWatcher refWatcher;
-    public static boolean isDebug = true;
     public static String APP_NAME = "Xrzj";
 
     public static synchronized BaseApplication getInstance() {

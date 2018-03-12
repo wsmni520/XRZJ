@@ -36,6 +36,7 @@ public abstract class BaseFragment<P extends BasePresenter> extends Fragment imp
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         initView();
+        initListener();
         initData();
     }
 
@@ -64,6 +65,9 @@ public abstract class BaseFragment<P extends BasePresenter> extends Fragment imp
 
     /** 初始数据的代码写在这个方法中，用于从服务器获取数据 */
     public abstract void initData();
+
+    /** 初始化监听器的代码写在这个方法中 */
+    public abstract void initListener();
     /**
      * 在子类中初始化对应的presenter
      */

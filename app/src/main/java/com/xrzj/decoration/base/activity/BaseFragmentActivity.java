@@ -6,13 +6,10 @@ import android.content.pm.ActivityInfo;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-
-import com.xrzj.decoration.base.app.BaseApplication;
 
 /**
  * @author: zhoufu
@@ -32,17 +29,12 @@ public abstract class BaseFragmentActivity extends FragmentActivity implements
     /** 当前Activity渲染的视图View **/
     private View mContextView = null;
     /** 是否输出日志信息 **/
-    private boolean isDebug;
-    private String APP_NAME;
     protected final String TAG = this.getClass().getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        isDebug = BaseApplication.isDebug;
-        APP_NAME = BaseApplication.APP_NAME;
-        $Log(TAG + "-->onCreate()");
         try {
             Bundle bundle = getIntent().getExtras();
             initParms(bundle);
@@ -176,13 +168,11 @@ public abstract class BaseFragmentActivity extends FragmentActivity implements
     @Override
     protected void onResume() {
         super.onResume();
-        $Log(TAG + "--->onResume()");
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        $Log(TAG + "--->onDestroy()");
     }
 
     /**
@@ -219,17 +209,6 @@ public abstract class BaseFragmentActivity extends FragmentActivity implements
      */
     public void setTileBarShow(boolean isTitleShow) {
         this.isTitleShow = isTitleShow;
-    }
-
-    /**
-     * [日志输出]
-     *
-     * @param msg
-     */
-    protected void $Log(String msg) {
-        if (isDebug) {
-            Log.d(APP_NAME, msg);
-        }
     }
 
     /**

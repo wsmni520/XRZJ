@@ -3,7 +3,7 @@
           package="com.xrzj.decoration">
 
     <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="false"
@@ -15,11 +15,13 @@
         <activity
             android:name=".ui.guide.view.activity.SplashActivity"
             android:theme="@style/SplashAppTheme">
-
-
         </activity>
         <activity android:name=".ui.main.view.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
 
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
         </activity>
         <activity
             android:name=".ui.guide.view.activity.GuidActivity"
@@ -30,17 +32,13 @@
         <activity
             android:name=".ui.other.user.view.activity.RegistActivity"
             android:theme="@style/AppTheme">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
-
 
         </activity>
         <activity android:name=".ztest.test1.TestActivity">
         </activity>
         <activity android:name=".ztest.test2.Test2Acticity">
+        </activity>
+        <activity android:name=".ui.other.designer.view.FindDesignerActivity">
         </activity>
     </application>
 
