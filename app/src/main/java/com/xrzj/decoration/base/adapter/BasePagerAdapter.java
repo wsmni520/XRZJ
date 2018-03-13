@@ -15,10 +15,22 @@ import java.util.List;
 public class BasePagerAdapter extends FragmentPagerAdapter{
 
     private List<?> mFragment;
+    private List<String> mTitleList;
 
     public BasePagerAdapter(FragmentManager fm, List<?> mFragment) {
         super(fm);
         this.mFragment = mFragment;
+
+    }
+
+
+    /**
+     * 接收首页传递的标题
+     */
+    public BasePagerAdapter(FragmentManager fm, List<?> mFragment, List<String> mTitleList) {
+        super(fm);
+        this.mFragment = mFragment;
+        this.mTitleList = mTitleList;
     }
 
 
@@ -37,6 +49,18 @@ public class BasePagerAdapter extends FragmentPagerAdapter{
         super.destroyItem(container, position, object);
     }
 
+    /**
+     * 首页显示title
+     * 若有问题，移到对应单独页面
+     */
+    @Override
+    public CharSequence getPageTitle(int position) {
+        if (mTitleList != null) {
+            return mTitleList.get(position);
+        } else {
+            return "";
+        }
+    }
 
     public void addFragmentList(List<?> fragment) {
         this.mFragment.clear();

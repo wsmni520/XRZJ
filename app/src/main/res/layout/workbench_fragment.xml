@@ -24,13 +24,13 @@
             android:padding="10dp">
 
             <ImageView
-                android:id="@+id/iv_new_seed_ic"
+                android:id="@+id/order_manage_iv"
                 android:layout_width="45dp"
                 android:layout_height="45dp"
                 android:src="@mipmap/ic_category_24"/>
 
             <TextView
-                android:id="@+id/tv_new_seed_title"
+                android:id="@+id/order_manage_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"

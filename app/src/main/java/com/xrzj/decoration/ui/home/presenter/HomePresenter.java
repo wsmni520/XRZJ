@@ -114,7 +114,7 @@ public class HomePresenter extends BaseRxPresenter<HomeContract.View> implements
     public BaseDelegateAdapter initPopularBrand() {
         //menu
         // 在构造函数设置每行的网格个数
-        final TypedArray proPic = mActivity.getResources().obtainTypedArray(R.array.data_narrow_Image);
+        final TypedArray proPic = mActivity.getResources().obtainTypedArray(R.array.data_narrow_image);
         final List<Integer> images = new ArrayList<>();
         for(int i =0 ; i<proPic.length() ; i++){
             images.add(proPic.getResourceId(i,R.mipmap.ic_data_picture));

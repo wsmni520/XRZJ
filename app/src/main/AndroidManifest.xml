@@ -32,13 +32,16 @@
         <activity
             android:name=".ui.other.user.view.activity.RegistActivity"
             android:theme="@style/AppTheme">
-
         </activity>
         <activity android:name=".ztest.test1.TestActivity">
         </activity>
         <activity android:name=".ztest.test2.Test2Acticity">
         </activity>
-        <activity android:name=".ui.other.designer.view.FindDesignerActivity">
+        <activity android:name=".ui.other.designer.view.activity.FindDesignerActivity">
+        </activity>
+        <activity android:name=".ui.other.designer.view.activity.DesignerActivity">
+        </activity>
+        <activity android:name=".ui.other.order.view.activity.OrderManageActivity">
         </activity>
     </application>
 

@@ -1,4 +1,4 @@
-package com.xrzj.decoration.ui.other.designer.view;
+package com.xrzj.decoration.ui.other.designer.view.activity;
 
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -73,6 +73,8 @@ public class FindDesignerActivity extends BaseAppCompatActivity<FindDesignerCont
         initDesignerRankRecycler();
         //初始化设计师列表的Recycler
         initDesignerListRecycler();
+        //初始化下拉列表
+        initSpinnerList();
 
     }
 
@@ -110,6 +112,7 @@ public class FindDesignerActivity extends BaseAppCompatActivity<FindDesignerCont
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Toast.makeText(mContext,"选择的是第"+position+"位设计师",Toast.LENGTH_SHORT).show();
+                startActivity(DesignerActivity.class);
             }
         });
 
@@ -124,14 +127,22 @@ public class FindDesignerActivity extends BaseAppCompatActivity<FindDesignerCont
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Toast.makeText(mContext,"选择的是第"+position+"位设计师",Toast.LENGTH_SHORT).show();
+                startActivity(DesignerActivity.class);
             }
         });
     }
 
     @Override
     public void initData() {
+
         LogUtils.d(TAG,"initData");
         mPresenter.getDesignerList();
+
+    }
+
+    private void initSpinnerList() {
+
+
     }
 
     @Override

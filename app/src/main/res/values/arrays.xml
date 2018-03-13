@@ -49,7 +49,7 @@
         <item>@string/recreational</item>
     </string-array>
     <!--数据页横向滑动图片-->
-    <integer-array name="data_narrow_Image">
+    <integer-array name="data_narrow_image">
         <item>@mipmap/bg_small_autumn_tree_min</item>
         <item>@mipmap/bg_small_kites_min</item>
         <item>@mipmap/bg_small_lake_min</item>
@@ -57,6 +57,42 @@
         <item>@mipmap/bg_small_magnolia_trees_min</item>
         <item>@mipmap/bg_small_solda_min</item>
     </integer-array>
+
+    <!--订单管理Tab标题-->
+    <string-array name="order_manage_tab">
+        <item>设计师订单</item>
+        <item>主管订单</item>
+        <item>监理订单</item>
+        <item>材料订单</item>
+    </string-array>
+
+
+    <!--找设计师下拉菜单栏文字-->
+    <!--服务区域-->
+    <string-array name="designer_service_area_spinner">
+        <item>服务区域</item>
+        <item>武昌区</item>
+        <item>汉口区</item>
+        <item>洪山区</item>
+        <item>江夏区</item>
+    </string-array>
+    <!--设计等级-->
+    <string-array name="designer_rank_spinner">
+        <item>设计等级</item>
+        <item>等级八</item>
+        <item>武昌区</item>
+        <item>汉口区</item>
+        <item>洪山区</item>
+        <item>江夏区</item>
+    </string-array>
+    <!--好评率-->
+    <string-array name="designer_favorable_rate_spinner">
+        <item>好评率</item>
+        <item>武昌区</item>
+        <item>汉口区</item>
+        <item>洪山区</item>
+        <item>江夏区</item>
+    </string-array>
 
 
 

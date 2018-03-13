@@ -14,7 +14,7 @@ import com.xrzj.decoration.base.adapter.BaseDelegateAdapter;
 import com.xrzj.decoration.ui.home.contract.HomeContract;
 import com.xrzj.decoration.ui.home.presenter.HomePresenter;
 import com.xrzj.decoration.ui.main.view.MainActivity;
-import com.xrzj.decoration.ui.other.designer.view.FindDesignerActivity;
+import com.xrzj.decoration.ui.other.designer.view.activity.FindDesignerActivity;
 import com.xrzj.decoration.utils.GlideImageLoader;
 import com.youth.banner.Banner;
 import com.youth.banner.BannerConfig;
