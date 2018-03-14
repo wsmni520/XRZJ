@@ -75,6 +75,66 @@
         android:layout_below="@+id/project_area"
         android:layout_marginTop="8dp"/>
 
+    <Button
+        android:id="@+id/check_order_btn"
+        android:layout_width="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/order_state"
+        android:layout_marginRight="50dp"
+        android:layout_toLeftOf="@+id/appeal_order_btn"
+        android:text="查看"
+        android:background="@drawable/rectangle_radius_shape"/>
+    <Button
+        android:id="@+id/appeal_order_btn"
+        android:layout_width="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/order_state"
+        android:layout_marginRight="50dp"
+        android:layout_toLeftOf="@+id/evaluate_order_btn"
+        android:text="申诉"
+        android:background="@drawable/rectangle_radius_shape"/>
+    <Button
+        android:id="@+id/evaluate_order_btn"
+        android:layout_width="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/order_state"
+        android:layout_alignParentRight="true"
+        android:text="评价"
+        android:background="@drawable/rectangle_radius_shape"/>
+    <Button
+        android:id="@+id/payfor_order_btn"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/order_state"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:text="立即支付"
+        android:background="@drawable/rectangle_radius_shape"/>
+
+    <Button
+        android:id="@+id/cancel_order_btn"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/order_state"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:text="取消"
+        android:background="@color/vl_item_divide_line_color"/>
+    <Button
+        android:id="@+id/confirm_order_btn"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/order_state"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:text="确认"
+        android:background="@drawable/rectangle_radius_shape"/>
 
 
 

@@ -24,6 +24,9 @@
     <string name="recreational">"休闲娱乐"</string>
 
     //找设计师
-    <string name="find_designer_title">"找设计师"</string>>
+    <string name="find_designer_title">"找设计师"</string>
+
+    //我的收藏
+    <string name="my_collection_title">"我的收藏"</string>
 
 </resources>

@@ -1,5 +1,4 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:tools="http://schemas.android.com/tools"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical">
@@ -17,155 +16,204 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:foreground="?android:attr/selectableItemBackground"
-            android:gravity="center"
             android:layout_weight="1"
+            android:gravity="center"
             android:orientation="vertical"
-            android:padding="10dp">
+            android:paddingTop="10dp">
 
-            <ImageView
-                android:id="@+id/order_manage_iv"
-                android:layout_width="45dp"
-                android:layout_height="45dp"
-                android:src="@mipmap/ic_category_24"/>
-
-            <TextView
-                android:id="@+id/order_manage_tv"
+            <LinearLayout
+                android:id="@+id/order_manage_ll"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="订单管理"
-                android:textColor="@color/home_function_btn_text_color"/>
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@mipmap/ic_category_24"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="订单管理"
+                    android:textColor="@color/home_function_btn_text_color"/>
+
+
+            </LinearLayout>
+            <View
+                style="@style/DeepUnderLine"
+                android:layout_marginTop="5dp"/>
+            <LinearLayout
+                android:id="@+id/base_info_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@mipmap/ic_category_24"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="基本资料"
+                    android:textColor="@color/home_function_btn_text_color"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/enter_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@mipmap/ic_category_24"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="我要入驻"
+                    android:textColor="@color/home_function_btn_text_color"/>
+
+            </LinearLayout>
+
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:foreground="?android:attr/selectableItemBackground"
-            android:gravity="center"
             android:layout_weight="1"
+            android:gravity="center"
             android:orientation="vertical"
-            android:padding="10dp">
+            android:paddingTop="10dp">
 
-            <ImageView
-                android:layout_width="45dp"
-                android:layout_height="45dp"
-                android:src="@mipmap/ic_category_24"/>
-
-            <TextView
+            <LinearLayout
+                android:id="@+id/collection_ll"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="收藏"
-                android:textColor="@color/home_function_btn_text_color"/>
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@mipmap/ic_category_24"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="收藏"
+                    android:textColor="@color/home_function_btn_text_color"/>
+
+
+            </LinearLayout>
+
+
+            <View
+                style="@style/DeepUnderLine"
+                android:layout_marginTop="5dp"/>
+
+            <LinearLayout
+                android:id="@+id/case_manage_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@mipmap/ic_category_24"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="案例管理"
+                    android:textColor="@color/home_function_btn_text_color"/>
+
+
+            </LinearLayout>
+
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:foreground="?android:attr/selectableItemBackground"
-            android:gravity="center"
             android:layout_weight="1"
-            android:orientation="vertical"
-            android:padding="10dp">
+            android:paddingTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="45dp"
-                android:layout_height="45dp"
-                android:src="@mipmap/ic_category_24"/>
-
-            <TextView
+            <LinearLayout
+                android:id="@+id/service_help_ll"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@mipmap/ic_category_24"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="客服与帮助"
+                    android:textColor="@color/home_function_btn_text_color"/>
+
+            </LinearLayout>
+
+
+
+            <View
                 android:layout_marginTop="5dp"
-                android:text="客服与帮助"
-                android:textColor="@color/home_function_btn_text_color"/>
+                style="@style/DeepUnderLine"/>
+
+            <LinearLayout
+                android:id="@+id/to_do_list_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@mipmap/ic_category_24"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="待处理工单"
+                    android:textColor="@color/home_function_btn_text_color"/>
+
+            </LinearLayout>
+
 
         </LinearLayout>
 
 
     </LinearLayout>
-    <View
-        style="@style/DeepUnderLine"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:foreground="?android:attr/selectableItemBackground"
-            android:gravity="center"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:padding="10dp">
-
-            <ImageView
-                android:layout_width="45dp"
-                android:layout_height="45dp"
-                android:src="@mipmap/ic_category_24"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="基本资料"
-                android:textColor="@color/home_function_btn_text_color"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:foreground="?android:attr/selectableItemBackground"
-            android:gravity="center"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:padding="10dp">
-
-            <ImageView
-                android:layout_width="45dp"
-                android:layout_height="45dp"
-                android:src="@mipmap/ic_category_24"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="案例管理"
-                android:textColor="@color/home_function_btn_text_color"/>
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:foreground="?android:attr/selectableItemBackground"
-            android:gravity="center"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:padding="10dp">
-
-            <ImageView
-                android:layout_width="45dp"
-                android:layout_height="45dp"
-                android:src="@mipmap/ic_category_24"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="待处理工单"
-                android:textColor="@color/home_function_btn_text_color"/>
-
-        </LinearLayout>
-
-
-    </LinearLayout>
-
 
 
 </LinearLayout>

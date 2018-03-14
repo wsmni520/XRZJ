@@ -5,10 +5,11 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+
     <include layout="@layout/back_text_two_image_title"></include>
     <android.support.design.widget.TabLayout
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/order_manage_tab_layout"
+        android:id="@+id/my_collection_tab_layout"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@color/white"
@@ -16,11 +17,10 @@
         app:tabSelectedTextColor="@color/regist_btn_bacground"
         app:tabTextColor="@color/home_function_btn_text_color"/>
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/order_manage_vp"
+    <com.xrzj.decoration.widget.NoSlidingViewPager
+        android:id="@+id/my_collection_vp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:background="#fff2f4f5"/>
+        android:layout_marginRight="10dp"/>
 </LinearLayout>

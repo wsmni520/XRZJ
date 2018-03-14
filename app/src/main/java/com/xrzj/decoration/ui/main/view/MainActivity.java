@@ -37,7 +37,6 @@ public class MainActivity extends BaseAppCompatActivity<MainContract.Presenter> 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
 
 

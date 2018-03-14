@@ -1,10 +1,14 @@
 package com.xrzj.decoration.ui.other.order.adapter;
 
+import android.content.Context;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.xrzj.decoration.R;
 import com.xrzj.decoration.base.adapter.BaseRecyclerViewAdapter;
@@ -23,10 +27,13 @@ import butterknife.ButterKnife;
 
 public class DesignerOrderListAdapter extends BaseRecyclerViewAdapter<DesignerOrderListAdapter.ViewHolder> {
 
-    private List<Order> mOrders;
 
-    public DesignerOrderListAdapter(List<Order> orders) {
+    private List<Order> mOrders;
+    private Context mContext;
+
+    public DesignerOrderListAdapter(Context context, List<Order> orders) {
         this.mOrders = orders;
+        this.mContext = context;
     }
 
     @Override
@@ -51,7 +58,7 @@ public class DesignerOrderListAdapter extends BaseRecyclerViewAdapter<DesignerOr
         return mOrders == null ? 0 : mOrders.size();
     }
 
-    static class ViewHolder extends RecyclerView.ViewHolder {
+    class ViewHolder extends RecyclerView.ViewHolder {
         @BindView(R.id.designer_photo_iv)
         CircleImageView mDesignerPhotoIv;
         @BindView(R.id.designer_name_tv)
@@ -66,6 +73,18 @@ public class DesignerOrderListAdapter extends BaseRecyclerViewAdapter<DesignerOr
         TextView mProjectArea;
         @BindView(R.id.order_state)
         TextView mOrderState;
+        @BindView(R.id.check_order_btn)
+        Button mCheckOrderBtn;
+        @BindView(R.id.appeal_order_btn)
+        Button mAppealOrderBtn;
+        @BindView(R.id.evaluate_order_btn)
+        Button mEvaluateOrderBtn;
+        @BindView(R.id.payfor_order_btn)
+        Button mPayforOrderBtn;
+        @BindView(R.id.cancel_order_btn)
+        Button mCancelOrderBtn;
+        @BindView(R.id.confirm_order_btn)
+        Button mConfirmOrderBtn;
 
         ViewHolder(View itemView, final DesignerOrderListAdapter adapter) {
             super(itemView);
@@ -76,6 +95,36 @@ public class DesignerOrderListAdapter extends BaseRecyclerViewAdapter<DesignerOr
                     adapter.onItemHolderClick(ViewHolder.this);
                 }
             });
+
+            mCheckOrderBtn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Log.d("mCheckOrderBtn","onClick");
+                    Toast.makeText(mContext,"查看",Toast.LENGTH_SHORT).show();
+                }
+            });
+
+            mAppealOrderBtn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Log.d("mCheckOrderBtn","onClick");
+                    Toast.makeText(mContext,"申诉",Toast.LENGTH_SHORT).show();
+                }
+            });
+
+            mEvaluateOrderBtn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Log.d("mCheckOrderBtn","onClick");
+                    Toast.makeText(mContext,"评价",Toast.LENGTH_SHORT).show();
+                }
+            });
+
+
+
+
+
+
         }
     }
 }

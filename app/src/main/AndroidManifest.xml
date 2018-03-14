@@ -43,6 +43,8 @@
         </activity>
         <activity android:name=".ui.other.order.view.activity.OrderManageActivity">
         </activity>
+        <activity android:name=".ui.other.collection.view.activity.MyCollectionActivity">
+        </activity>
     </application>
 
 </manifest>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp">
+
+    <com.xrzj.decoration.widget.CircleImageView
+        android:id="@+id/designer_photo_iv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/bg_small_magnolia_trees_min"/>
+
+    <TextView
+        android:id="@+id/designer_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"
+        android:text="李胜男"
+        android:layout_toRightOf="@+id/designer_photo_iv"
+        android:layout_alignParentTop="true"/>
+
+    <ImageView
+        android:id="@+id/designer_identification_iv"
+        android:layout_marginLeft="5dp"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_toRightOf="@+id/designer_name_tv"
+        android:src="@mipmap/bg_small_lake_min"/>
+    <ImageView
+        android:id="@+id/designer_Safeguards_iv"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/designer_identification_iv"
+        android:src="@mipmap/bg_small_lake_min"/>
+
+    <TextView
+        android:id="@+id/designer_rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="等级%d"
+
+        android:layout_alignBaseline="@+id/designer_name_tv"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/designer_per_price"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/designer_per_price"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@+id/designer_rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¥d%/㎡"
+        android:layout_marginRight="10dp"
+        />
+
+    <TextView
+        android:id="@+id/design_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设计年限d%年"
+        android:textSize="10dp"
+        android:layout_above="@+id/designer_transactions_num_tv"
+        android:layout_alignStart="@+id/designer_transactions_num_tv"/>
+
+    <TextView
+        android:id="@+id/designer_collection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="收藏d%"
+        android:textSize="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/design_year"
+        android:layout_alignBaseline="@+id/design_year"/>
+
+    <TextView
+        android:id="@+id/design_product_num_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="作品d%"
+        android:textSize="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/designer_collection"
+        android:layout_alignBaseline="@+id/design_year"/>
+
+
+    <TextView
+        android:id="@+id/designer_transactions_num_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        android:layout_alignStart="@+id/designer_name_tv"
+        android:layout_alignBottom="@+id/designer_photo_iv"
+        android:text="成交d%"/>
+
+    <TextView
+        android:id="@+id/designer_order_num_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="d%人已预约"
+        android:textSize="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/design_year"
+        android:layout_alignBaseline="@+id/designer_transactions_num_tv"/>
+
+    <TextView
+        android:id="@+id/design_favorable_rate_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="好评率:d%%"
+        android:textSize="10dp"
+        android:layout_below="@+id/design_product_num_tv"
+        android:layout_alignBaseline="@+id/designer_transactions_num_tv"
+        android:layout_alignEnd="@+id/designer_per_price"/>
+
+</RelativeLayout>

@@ -4,13 +4,15 @@ package com.xrzj.decoration.ui.other.order.view.fragment;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.Toast;
 
 import com.xrzj.decoration.R;
 import com.xrzj.decoration.base.fragment.BaseFragment;
 import com.xrzj.decoration.ui.other.order.adapter.DesignerOrderListAdapter;
 import com.xrzj.decoration.ui.other.order.contract.DesignerOrderManageContract;
-import com.xrzj.decoration.ui.other.order.contract.OrderManageContract;
 import com.xrzj.decoration.ui.other.order.model.bean.Order;
 import com.xrzj.decoration.ui.other.order.presenter.DesignerOrderManagePresenter;
 
@@ -42,7 +44,7 @@ public class DesignerOrderFragment extends BaseFragment<DesignerOrderManageContr
     }
 
     private void initDesignerOrderRecycler() {
-        mDesignerOrderListAdapter = new DesignerOrderListAdapter(mDesignerOrder);
+        mDesignerOrderListAdapter = new DesignerOrderListAdapter(mContext,mDesignerOrder);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(mContext);
         mDesignerOrderManageRecycler.setLayoutManager(linearLayoutManager);
         mDesignerOrderManageRecycler.setAdapter(mDesignerOrderListAdapter);
@@ -56,7 +58,34 @@ public class DesignerOrderFragment extends BaseFragment<DesignerOrderManageContr
 
     @Override
     public void initListener() {
+        initDesignerOrderManageItemClickListener();
 
+    }
+
+    private void initDesignerOrderManageItemClickListener() {
+        mDesignerOrderListAdapter.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                switch (view.getId()) {
+                    case R.id.check_order_btn :
+                        Log.d("check_order_btn : ","Click");
+                        break;
+                    case R.id.evaluate_order_btn :
+                        Log.d("evaluate_order_btn : ","Click");
+                        break;
+                    case R.id.appeal_order_btn :
+                        Log.d("appeal_order_btn : ","Click");
+                        break;
+                    default :
+                        Log.d("check_order_btn : ","Click");
+                        Toast.makeText(mContext,"选择的是第"+position+"个订单",Toast.LENGTH_SHORT).show();
+                        break;
+                }
+
+
+
+            }
+        });
     }
 
     @Override

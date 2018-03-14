@@ -3,5 +3,6 @@
 
     <dimen name="guidview_login_button_width">100px</dimen>
 
-
+    //侧滑删除按钮的宽度
+    <dimen name="dp_70">70dp</dimen>
 </resources>
