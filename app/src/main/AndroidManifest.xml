@@ -37,13 +37,17 @@
         </activity>
         <activity android:name=".ztest.test2.Test2Acticity">
         </activity>
-        <activity android:name=".ui.other.designer.view.activity.FindDesignerActivity">
+        <activity android:name=".ui.other.find.view.activity.FindDesignerActivity">
         </activity>
-        <activity android:name=".ui.other.designer.view.activity.DesignerActivity">
+        <activity android:name=".ui.other.find.view.activity.DesignerActivity">
         </activity>
         <activity android:name=".ui.other.order.view.activity.OrderManageActivity">
         </activity>
         <activity android:name=".ui.other.collection.view.activity.MyCollectionActivity">
+        </activity>
+        <activity android:name=".ui.other.enter.view.activity.EnterDesignerInputInfoActivity">
+        </activity>
+        <activity android:name=".ui.other.order.view.activity.PayForOrderActivity">
         </activity>
     </application>
 

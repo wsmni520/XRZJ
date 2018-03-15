@@ -2,7 +2,7 @@ package com.xrzj.decoration.ui.other.collection.contract;
 
 import com.xrzj.decoration.base.mvp.BasePresenter;
 import com.xrzj.decoration.base.mvp.BaseView;
-import com.xrzj.decoration.ui.other.designer.model.bean.Designer;
+import com.xrzj.decoration.ui.other.find.model.bean.Designer;
 
 import java.util.List;
 

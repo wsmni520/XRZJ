@@ -14,7 +14,7 @@ import com.xrzj.decoration.base.fragment.BaseFragment;
 import com.xrzj.decoration.ui.other.collection.adapter.DesignerCollectionListAdapter;
 import com.xrzj.decoration.ui.other.collection.contract.DesignerCollectContract;
 import com.xrzj.decoration.ui.other.collection.presenter.DesignerCollectionPresenter;
-import com.xrzj.decoration.ui.other.designer.model.bean.Designer;
+import com.xrzj.decoration.ui.other.find.model.bean.Designer;
 import com.yanzhenjie.recyclerview.swipe.SwipeItemClickListener;
 import com.yanzhenjie.recyclerview.swipe.SwipeMenu;
 import com.yanzhenjie.recyclerview.swipe.SwipeMenuBridge;

@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/back_text_two_image_title"></include>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/vl_item_divide_line_color"
+            android:padding="10dp">
+
+            <com.xrzj.decoration.widget.CircleImageView
+                android:id="@+id/enter_designer_photo_civ"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/bg_small_magnolia_trees_min"/>
+
+            <TextView
+                android:id="@+id/enter_designer_upload_photo_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/enter_designer_photo_civ"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="点击上传头像"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/enter_designer_upload_photo_tv"
+                android:layout_marginTop="10dp"
+                android:text="基本信息"
+                android:textSize="15dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/enter_designer_realname_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="真是姓名:"
+                android:textSize="15dp"/>
+
+            <EditText
+                android:id="@+id/enter_designer_realname_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LoginRegistEditStyle"
+                android:layout_toEndOf="@+id/enter_designer_realname_tv"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <View style="@style/DeepUnderLine"></View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/enter_designer_gender_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="性别:"
+                android:textSize="15dp"/>
+
+            <RadioButton
+                android:id="@+id/enter_designer_gender_man_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/enter_designer_gender_tv"
+                android:text="男"/>
+
+            <RadioButton
+                android:id="@+id/enter_designer_gender_woman_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/enter_designer_gender_man_rb"
+                android:text="女"/>
+        </RelativeLayout>
+
+        <View style="@style/DeepUnderLine"></View>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/enter_designer_introduction_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="简介:"
+                android:textSize="15dp"/>
+
+            <EditText
+                android:id="@+id/enter_designer_introduction_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LoginRegistEditStyle"
+                android:layout_toEndOf="@+id/enter_designer_introduction_tv"
+                android:layout_centerVertical="true"/>
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/vl_item_divide_line_color"
+            android:padding="10dp"
+            android:text="工作信息"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/enter_designer_workyear_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="工作年限:"
+                android:textSize="15dp"/>
+
+            <LinearLayout
+                android:id="@+id/enter_designer_workyear_ll"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_toEndOf="@+id/enter_designer_workyear_tv"
+                android:background="@drawable/work_year_ll_bg"
+                android:divider="@drawable/rectangle_btn_shape_divider"
+                android:focusable="true"
+                android:orientation="horizontal"
+                android:showDividers="middle">
+
+                <Button
+                    android:id="@+id/enter_designer_reduce_workyear"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/work_year_btn"
+                    android:gravity="center"
+                    android:text="-"/>
+
+                <EditText
+                    android:id="@+id/enter_designer_workyear_et"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:minWidth="60dp"
+                    android:text="1"/>
+
+                <Button
+                    android:id="@+id/enter_designer_add_workyear"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/work_year_btn"
+                    android:gravity="center"
+                    android:text="+"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/enter_designer_workyear_ll"
+                android:text="年"
+                android:layout_marginLeft="10dp"
+                android:textSize="15dp"/>
+
+        </RelativeLayout>
+        <View style="@style/DeepUnderLine"></View>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/enter_designer_goodat_style_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="擅长风格:"
+                android:textSize="15dp"/>
+            <TextView
+                android:layout_below="@+id/enter_designer_goodat_style_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="最多可选5项"
+                android:textSize="11dp"/>
+
+
+            <RadioButton
+                android:id="@+id/enter_designer_european_style_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/enter_designer_goodat_style_tv"
+                android:text="欧式"/>
+
+            <RadioButton
+                android:id="@+id/enter_designer_chinese_style_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/enter_designer_european_style_rb"
+                android:text="中式"/>
+
+            <RadioButton
+                android:id="@+id/enter_designer_american_style_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/enter_designer_chinese_style_rb"
+                android:text="美式"/>
+
+            <RadioButton
+                android:id="@+id/enter_designer_countryside_style_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/enter_designer_american_style_rb"
+                android:text="田园"/>
+
+            <RadioButton
+                android:id="@+id/enter_designer_modern_style_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/enter_designer_goodat_style_tv"
+                android:layout_below="@+id/enter_designer_european_style_rb"
+                android:text="现代"/>
+
+
+            <RadioButton
+                android:id="@+id/enter_mix_style_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/enter_designer_modern_style_rb"
+                android:layout_below="@+id/enter_designer_european_style_rb"
+                android:text="混搭"/>
+
+            <RadioButton
+                android:id="@+id/enter_ikea_style_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/enter_mix_style_rb"
+                android:layout_below="@+id/enter_designer_european_style_rb"
+                android:text="宜家"/>
+
+            <RadioButton
+                android:id="@+id/enter_mdtsea_style_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/enter_ikea_style_rb"
+                android:layout_below="@+id/enter_designer_european_style_rb"
+                android:text="地中海"/>
+
+        </RelativeLayout>
+
+        <View style="@style/DeepUnderLine"></View>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/enter_designer_domicile_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="所在城市:"
+                android:textSize="15dp"/>
+
+            <EditText
+                android:id="@+id/enter_designer_domicile_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LoginRegistEditStyle"
+                android:layout_toEndOf="@+id/enter_designer_domicile_tv"
+                android:layout_centerVertical="true"/>
+            />
+        </RelativeLayout>
+
+        <View style="@style/DeepUnderLine"></View>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/enter_designer_service_area_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="服务区域:"
+                android:textSize="15dp"/>
+            <TextView
+                android:layout_below="@+id/enter_designer_service_area_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="最多可选8项"
+                android:textSize="11dp"/>
+
+
+        </RelativeLayout>
+        <View style="@style/DeepUnderLine"></View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/enter_designer_idea_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="设计理念:"
+                android:textSize="15dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:gravity="top"
+                android:background="@null"
+                android:hint="最多200字以内"
+                android:layout_toEndOf="@+id/enter_designer_idea_tv"
+                android:textSize="11dp"/>
+
+
+        </RelativeLayout>
+
+        <View style="@style/DeepUnderLine"></View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+
+            <TextView
+                android:id="@+id/enter_designer_idcard_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:text="身份证号:"
+                android:textSize="15dp"/>
+
+            <EditText
+                android:id="@+id/enter_designer_idcard_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LoginRegistEditStyle"
+                android:inputType="number"
+                android:layout_toEndOf="@+id/enter_designer_idcard_tv"
+                android:layout_centerVertical="true"/>
+            />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

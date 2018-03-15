@@ -1,4 +1,4 @@
-package com.xrzj.decoration.ui.other.collection.adapter;
+package com.xrzj.decoration.ui.other.find.adapter;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -19,19 +19,19 @@ import butterknife.ButterKnife;
 
 /**
  * @author: zhoufu
- * @date: On 2018/3/13
+ * @date: On 2018/3/12
  */
 
-public class DesignerCollectionListAdapter extends BaseRecyclerViewAdapter<DesignerCollectionListAdapter.ViewHolder> {
+public class FindDesignerListAdapter extends BaseRecyclerViewAdapter<FindDesignerListAdapter.ViewHolder> {
     private List<Designer> mDesigners;
 
-    public DesignerCollectionListAdapter(List<Designer> Designers) {
-        this.mDesigners = Designers;
+    public FindDesignerListAdapter(List<Designer> designers) {
+        this.mDesigners = designers;
     }
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.designer_collection_recycler_item, parent, false);
+        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.find_designer_info_vlayout_item, parent, false);
         return new ViewHolder(itemView, this);
     }
 
@@ -50,6 +50,11 @@ public class DesignerCollectionListAdapter extends BaseRecyclerViewAdapter<Desig
         holder.mDesignerTransactionsNumTv.setText(designer.getTransactionsNum());
         holder.mDesignerOrderNumTv.setText(designer.getOrderNum());
         holder.mDesignFavorableRateTv.setText(designer.getFavorableRate());
+        holder.mProductIv.setImageResource(R.mipmap.bg_small_autumn_tree_min);
+        holder.mProductName.setText(designer.getProduct().getProductName());
+        holder.mDesignArea.setText(designer.getProduct().getProductHouseArea());
+        holder.mProductHouseType.setText(designer.getProduct().getProductHouseType());
+        holder.mDesignStyle.setText(designer.getProduct().getProductHouseStyle());
     }
 
     @Override
@@ -82,9 +87,18 @@ public class DesignerCollectionListAdapter extends BaseRecyclerViewAdapter<Desig
         TextView mDesignerOrderNumTv;
         @BindView(R.id.design_favorable_rate_tv)
         TextView mDesignFavorableRateTv;
-        private List<Designer> mDesigners;
+        @BindView(R.id.product_iv)
+        ImageView mProductIv;
+        @BindView(R.id.product_name)
+        TextView mProductName;
+        @BindView(R.id.design_area)
+        TextView mDesignArea;
+        @BindView(R.id.product_house_type)
+        TextView mProductHouseType;
+        @BindView(R.id.design_style)
+        TextView mDesignStyle;
 
-        ViewHolder(View itemView, final DesignerCollectionListAdapter adapter) {
+        ViewHolder(View itemView, final FindDesignerListAdapter adapter) {
             super(itemView);
             ButterKnife.bind(this, itemView);
             itemView.setOnClickListener(new View.OnClickListener() {

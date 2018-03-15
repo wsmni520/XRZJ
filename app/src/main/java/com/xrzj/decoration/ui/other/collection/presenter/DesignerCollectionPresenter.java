@@ -5,7 +5,7 @@ import com.xrzj.decoration.base.mvp.BaseRxPresenter;
 import com.xrzj.decoration.ui.other.collection.contract.DesignerCollectContract;
 import com.xrzj.decoration.ui.other.collection.model.IDesignerCollectionModel;
 import com.xrzj.decoration.ui.other.collection.model.impl.DesignerCollectionModel;
-import com.xrzj.decoration.ui.other.designer.model.bean.Designer;
+import com.xrzj.decoration.ui.other.find.model.bean.Designer;
 
 import java.util.List;
 

@@ -44,7 +44,7 @@ public class DesignerOrderFragment extends BaseFragment<DesignerOrderManageContr
     }
 
     private void initDesignerOrderRecycler() {
-        mDesignerOrderListAdapter = new DesignerOrderListAdapter(mContext,mDesignerOrder);
+        mDesignerOrderListAdapter = new DesignerOrderListAdapter(getActivity(),mDesignerOrder);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(mContext);
         mDesignerOrderManageRecycler.setLayoutManager(linearLayoutManager);
         mDesignerOrderManageRecycler.setAdapter(mDesignerOrderListAdapter);
@@ -81,9 +81,6 @@ public class DesignerOrderFragment extends BaseFragment<DesignerOrderManageContr
                         Toast.makeText(mContext,"选择的是第"+position+"个订单",Toast.LENGTH_SHORT).show();
                         break;
                 }
-
-
-
             }
         });
     }

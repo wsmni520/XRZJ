@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请选择入驻的类别"
+        android:textSize="16dp"
+        android:textColor="@color/me_menu_tv_text_color"
+        android:padding="15dp"
+        />
+
+    <View
+        style="@style/DeepUnderLine"/>
+
+    <RadioGroup
+        android:id="@+id/enter_type_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/designer_type_rb"
+            android:layout_width="match_parent"
+            android:textSize="15dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/me_menu_tv_text_color"
+            android:layout_marginBottom="10dp"
+            android:text="我是设计师"/>
+
+        <View
+            style="@style/DeepUnderLine"/>
+
+        <RadioButton
+            android:id="@+id/supervisor_type_rb"
+            android:layout_width="match_parent"
+            android:textSize="15dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/me_menu_tv_text_color"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="我是监理"/>
+        <View
+            style="@style/DeepUnderLine"/>
+
+        <RadioButton
+            android:id="@+id/scene_manager_type_rb"
+            android:layout_width="match_parent"
+            android:textSize="15dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/me_menu_tv_text_color"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginBottom="10dp"
+            android:text="我是工地主管"/>
+        <View
+            style="@style/DeepUnderLine"/>
+
+        <RadioButton
+            android:id="@+id/worker_type_rb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/me_menu_tv_text_color"
+            android:layout_marginBottom="10dp"
+            android:textSize="15dp"
+            android:text="我是施工工人"/>
+        <View
+            style="@style/DeepUnderLine"/>
+
+        <RadioButton
+            android:id="@+id/material_provider_type_rb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/me_menu_tv_text_color"
+            android:layout_marginBottom="10dp"
+            android:text="我是材料商"/>
+        <View
+            style="@style/DeepUnderLine"/>
+
+    </RadioGroup>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/next"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="下一步"
+        android:background="@drawable/rectangle_radius_shape"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textSize="14dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="角色资料确认后将无法变更，请慎重选择"/>
+
+</LinearLayout>

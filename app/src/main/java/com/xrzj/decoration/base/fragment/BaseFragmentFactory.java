@@ -2,7 +2,7 @@ package com.xrzj.decoration.base.fragment;
 
 import com.xrzj.decoration.ui.message.view.fragment.MessageFragment;
 import com.xrzj.decoration.ui.home.view.fragment.HomeFragment;
-import com.xrzj.decoration.ui.other.user.view.fragment.UserFragment;
+import com.xrzj.decoration.ui.me.view.fragment.UserFragment;
 import com.xrzj.decoration.ui.workbench.view.fragment.WorkbenchFragment;
 
 /**

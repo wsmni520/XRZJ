@@ -27,4 +27,20 @@ public class Constant {
         //底部
         int FOOTER = 9;
     }
+
+    public interface ENTER_TYPE{
+        String TYPE = "TYPE";
+        //没选择类型
+        int NONE_TYPE = -1;
+        //设计师
+        int DESIGNER = 1;
+        //监理
+        int SUPERVISOR = 2;
+        //工地主管
+        int SCENE_MANAGER = 3;
+        //施工人员
+        int WORKER = 4;
+        //材料商
+        int MATERIAL_PROVIDER = 5;
+    }
 }
