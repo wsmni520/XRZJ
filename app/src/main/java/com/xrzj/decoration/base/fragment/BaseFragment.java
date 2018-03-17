@@ -13,10 +13,12 @@ import com.xrzj.decoration.base.mvp.BasePresenter;
 import com.xrzj.decoration.base.mvp.BaseView;
 
 import butterknife.ButterKnife;
+import butterknife.Unbinder;
 
 public abstract class BaseFragment<P extends BasePresenter> extends Fragment implements BaseView,View.OnClickListener{
     protected P mPresenter;
     public Context mContext;
+    private Unbinder mUnbinder;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -28,7 +30,7 @@ public abstract class BaseFragment<P extends BasePresenter> extends Fragment imp
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(getContentView(), container , false);
-        ButterKnife.bind(this, view);
+        mUnbinder = ButterKnife.bind(this, view);
         return view;
     }
 
@@ -54,6 +56,7 @@ public abstract class BaseFragment<P extends BasePresenter> extends Fragment imp
         if (mPresenter != null) {
             mPresenter.unSubscribe();
         }
+        mUnbinder.unbind();
         super.onDestroy();
     }
 
