@@ -15,7 +15,7 @@ public class DesignerIntroductionFragment extends BaseFragment {
 
     @Override
     public int getContentView() {
-        return R.layout.fragment_designer_introduction;
+        return R.layout.designer_introduction_fragment;
     }
 
     @Override

@@ -16,7 +16,7 @@ public class MaterialOrderManageFragment extends BaseFragment {
 
     @Override
     public int getContentView() {
-        return R.layout.fragment_material_order_manage;
+        return R.layout.material_order_manage_fragment;
     }
 
     @Override

@@ -28,7 +28,7 @@ public class DesignCaseFragment extends BaseFragment {
 
     @Override
     public int getContentView() {
-        return R.layout.fragment_design_case;
+        return R.layout.design_case_fragment;
     }
 
     @Override

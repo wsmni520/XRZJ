@@ -11,7 +11,7 @@ import okhttp3.Interceptor;
 import okhttp3.Request;
 
 /**
- * 登录拦截
+ * 打印网络请求时传输的字段还有返回的json数据
  * @author: zhoufu
  * @date: On 2018/3/5
  */

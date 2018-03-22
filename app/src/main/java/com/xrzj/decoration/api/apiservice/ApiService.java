@@ -1,10 +1,9 @@
 package com.xrzj.decoration.api.apiservice;
 
+import com.xrzj.decoration.base.response.BaseResponse;
 import com.xrzj.decoration.ztest.test1.IPHttpResult;
 import com.xrzj.decoration.ztest.test1.TestBean;
-import com.xrzj.decoration.ztest.test2.msg;
 
-import java.util.HashMap;
 import java.util.Map;
 
 import io.reactivex.Observable;
@@ -40,13 +39,28 @@ public interface ApiService {
     @GET("service/getIpInfo.php")
     Observable<IPHttpResult<TestBean>> executeGet(@Query("ip") String ip);
 
+
     /**
-     * sdada
-     * @param paramsMap adad
-     * @return ada
+     *
+     * test
+     * 获取public key
+     *
+     * @return RxJava 对象
      */
-    @POST("message/listMessage")
-    Observable<msg> executePost(@QueryMap HashMap<String,String> paramsMap);
+    @GET("authorization/getpublickey")
+    Observable<BaseResponse> executeGet();
+
+
+    /**
+     *
+     * test
+     * 获取public key
+     *
+     * @return RxJava 对象
+     */
+    @FormUrlEncoded
+    @POST("authorization/gettoken")
+    Observable<BaseResponse> executeGetToken(@FieldMap Map<String, Object> map);
 
 
 }

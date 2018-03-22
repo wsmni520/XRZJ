@@ -13,7 +13,7 @@ public class HttpConfig {
 
 
     private static final boolean IS_DEBUG = LogUtils.isDebug;
-    private static final String DEBUG_SERVER="http://ip.taobao.com/";
+    private static final String DEBUG_SERVER="http://192.168.5.65:5555";
     private static final String OFFICAL_SERVER ="http://xxx.com/interface.php?";
     private static final String SPRIT = "/";
     public static String getServer()

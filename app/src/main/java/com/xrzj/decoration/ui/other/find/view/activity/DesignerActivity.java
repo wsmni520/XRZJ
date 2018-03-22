@@ -52,7 +52,7 @@ public class DesignerActivity extends BaseAppCompatActivity<DesignerContract.Pre
 
     @Override
     public int getContentView() {
-        return R.layout.activity_designer;
+        return R.layout.designer_activity;
     }
 
     @Override

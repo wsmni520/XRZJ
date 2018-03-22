@@ -8,4 +8,9 @@ package com.xrzj.decoration.ztest.test1;
 public interface ITestPresenter {
 
     public void search(String ip);
+
+    public void getpublicKey();
+
+
+    public void gettoken();
 }

@@ -10,5 +10,6 @@ import com.xrzj.decoration.base.mvp.BaseModel;
 
 public interface BaseTestModel extends BaseModel {
     public void search (String ip,final AsyncCallback callBack);
-
+    public void getpublicKey (final AsyncCallback callBack);
+    public void gettoken (String key,final AsyncCallback callBack);
 }

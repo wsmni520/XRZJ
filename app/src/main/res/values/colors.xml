@@ -7,10 +7,27 @@
     <color name="gray_black">#202020</color>
     <color name="red">#FF4444</color>
     <color name="divider_color">#FFB7B2B2</color>
+
+    <!--////////////////////////////主界面////////////////////////////-->
+    <!--主界面背景颜色-->
+    <color name="main_bg">#F6F5F3</color>
+    <!--主界面底部Tab按钮颜色-->
+    <color name="botoom_tab_select_color">#4EAC6D</color>
+    <color name="botoom_tab_unselectolor_color">#929292</color>
+
+
     <!--首页-->
     <!--主界面功能按钮字体颜色 -->
-    <color name="home_function_btn_text_color">#464C56</color>
-
+    <color name="home_function_btn_text_color">#4D535A</color>
+    <!--主界面跑马灯样式颜色 -->
+    <color name="marquee_view_text_color">#4D535A</color>
+    <color name="marquee_time_text_color">#999999</color>
+    <color name="marquee_arrow_color">#B2B2B2</color>
+    <!--主界面不同模块标题样式颜色 -->
+    <color name="module_title_text_color">#3A4043</color>
+    <color name="module_more_text_color">#9D9FA1</color>
+    <color name="module_more_arrow_color">#ABABAB</color>
+    <color name="decoration_uv_date_text_color">#9d9fa1</color>
     <!--登录界面 -->
     <!--登录注册输入框字体颜色-->
     <color name="login_regist_et_text_color">#000000</color>
@@ -25,6 +42,9 @@
     <color name="vl_item_divide_line_color">#e5e5e5</color>
 
     <color name="divider">#ffd2d2d2</color>
+    <color name="decoration_strategy_bg">#3358c187</color>
+    <color name="decoration_strategy_text_color">#00ae66</color>
+    <color name="decoration_uv_news_text_color">#3a4043</color>
 
 
 </resources>

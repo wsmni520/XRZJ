@@ -51,7 +51,6 @@ public class RetrofitFactory {
      */
     private static void getBaseUrl() {
         baseUrl = HttpConfig.getServer();
-        Log.d("RetrofitFactory",baseUrl);
     }
 
     private static Retrofit getInstanceRetrofit() {

@@ -34,7 +34,7 @@ public class DesignerOrderFragment extends BaseFragment<DesignerOrderManageContr
 
     @Override
     public int getContentView() {
-        return R.layout.fragment_designer_order;
+        return R.layout.designer_order_fragment;
     }
 
     @Override

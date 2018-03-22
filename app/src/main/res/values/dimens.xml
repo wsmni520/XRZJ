@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="decoration_uv_date_text_size">9sp</dimen>
+    <dimen name="decoration_strategy_marginLeft">7dp</dimen>
+    <dimen name="decoration_strategy_text_padding">3dp</dimen>
+    <dimen name="decoration_strategy_text_size">8sp</dimen>
+    <dimen name="decoration_uv_iv_width">87dp</dimen>
+    <dimen name="decoration_uv_iv_height">65dp</dimen>
+    <dimen name="decoration_uv_news_text_size">12sp</dimen>
+</resources>

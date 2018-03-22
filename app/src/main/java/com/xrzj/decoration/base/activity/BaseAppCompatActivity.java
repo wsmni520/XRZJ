@@ -24,12 +24,18 @@ import butterknife.ButterKnife;
 public abstract class BaseAppCompatActivity<P extends BasePresenter> extends AppCompatActivity implements BaseView,View.OnClickListener{
     protected P mPresenter;
     public Context mContext;
+    /** 是否沉浸状态栏 **/
+    private boolean isSetStatusBar = false;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(getContentView());
         ButterKnife.bind(this);
+
+        if (isSetStatusBar) {
+            steepStatusBar();
+        }
         //避免切换横竖屏
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         this.mContext = this;
@@ -44,6 +50,29 @@ public abstract class BaseAppCompatActivity<P extends BasePresenter> extends App
 //        if(!NetworkUtils.isConnected()){
 //            ToastUtils.showShort("请检查网络是否连接");
 //        }
+    }
+
+    /**
+     * [是否设置沉浸状态栏]
+     *
+     * @param isSetStatusBar
+     */
+    public void setSteepStatusBar(boolean isSetStatusBar) {
+        this.isSetStatusBar = isSetStatusBar;
+    }
+
+    /**
+     * [沉浸状态栏]
+     */
+    private void steepStatusBar() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            // 透明状态栏
+            getWindow().addFlags(
+                    WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+//            // 透明导航栏
+//            getWindow().addFlags(
+//                    WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
+        }
     }
 
     @Override

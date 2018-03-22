@@ -3,19 +3,19 @@
 
     <!--///////////////////////////////////////首页/////////////////////////////////////-->
     <!--首页底部导航栏的标题，未选中时-->
-    <integer-array name="main_tab_un_select">
-        <item name="tab_home">@mipmap/tab_home_unselect</item>
-        <item name="tab_find">@mipmap/tab_speech_unselect</item>
-        <item name="tab_data">@mipmap/tab_contact_unselect</item>
-        <item name="tab_me">@mipmap/tab_more_unselect</item>
+    <integer-array name="main_tab_unselect">
+        <item name="tab_home">@drawable/home_tab_unselect_ic</item>
+        <item name="tab_workbench">@drawable/workbench_tab_unselect_ic</item>
+        <item name="tab_message">@drawable/message_tab_unselect_ic</item>
+        <item name="tab_me">@drawable/me_tab_unselect_ic</item>
     </integer-array>
 
     <!--首页底部导航栏的标题，选中时-->
     <integer-array name="main_tab_select">
-        <item name="tab_home">@mipmap/tab_home_select</item>
-        <item name="tab_find">@mipmap/tab_speech_select</item>
-        <item name="tab_data">@mipmap/tab_contact_select</item>
-        <item name="tab_me">@mipmap/tab_more_select</item>
+        <item name="tab_home">@drawable/home_tab_select_ic</item>
+        <item name="tab_workbench">@drawable/workbench_tab_select_ic</item>
+        <item name="tab_message">@drawable/message_tab_select_ic</item>
+        <item name="tab_me">@drawable/me_tab_select_ic</item>
     </integer-array>
 
     <!--首页底部导航栏文字-->
@@ -28,14 +28,14 @@
 
     <!--发现页图片-->
     <integer-array name="find_gv_image">
-        <item>@mipmap/ic_category_16</item>
-        <item>@mipmap/ic_category_18</item>
-        <item>@mipmap/ic_category_2</item>
-        <item>@mipmap/ic_category_6</item>
-        <item>@mipmap/ic_category_27</item>
-        <item>@mipmap/ic_category_24</item>
-        <item>@mipmap/ic_category_22</item>
-        <item>@mipmap/ic_category_14</item>
+        <item>@mipmap/home_find_designer_ic</item>
+        <item>@mipmap/home_find_manager_ic</item>
+        <item>@mipmap/home_find_supervisor_ic</item>
+        <item>@mipmap/home_find_material_ic</item>
+        <item>@mipmap/home_fix_home_ic</item>
+        <item>@mipmap/home_design_pics_ic</item>
+        <item>@mipmap/home_decoration_university_ic</item>
+        <item>@mipmap/home_recreational_ic</item>
     </integer-array>
     <!--发现页图片对应的位子-->
     <string-array name="find_gv_title">
@@ -46,16 +46,40 @@
         <item>@string/fix_home</item>
         <item>@string/design_pics</item>
         <item>@string/decoration_university</item>
-        <item>@string/recreational</item>
+        <item>@string/entertainment</item>
     </string-array>
-    <!--数据页横向滑动图片-->
-    <integer-array name="data_narrow_image">
-        <item>@mipmap/bg_small_autumn_tree_min</item>
-        <item>@mipmap/bg_small_kites_min</item>
-        <item>@mipmap/bg_small_lake_min</item>
-        <item>@mipmap/bg_small_leaves_min</item>
-        <item>@mipmap/bg_small_magnolia_trees_min</item>
-        <item>@mipmap/bg_small_solda_min</item>
+    <!--热门品牌图片-->
+    <integer-array name="popularbrand_image">
+        <item>@mipmap/pinpai1</item>
+        <item>@mipmap/pinpai2</item>
+        <item>@mipmap/pinpai3</item>
+        <item>@mipmap/pinpai4</item>
+        <item>@mipmap/pinpai5</item>
+        <item>@mipmap/pinpai6</item>
+        <item>@mipmap/pinpai7</item>
+        <item>@mipmap/pinpai8</item>
+        <item>@mipmap/pinpai9</item>
+    </integer-array>
+
+    <!--休闲娱乐图片-->
+    <integer-array name="entertainment_image">
+        <item>@mipmap/xiuxianyule1</item>
+        <item>@mipmap/xiuxianyule2</item>
+        <item>@mipmap/xiuxianyule1</item>
+        <item>@mipmap/xiuxianyule2</item>
+    </integer-array>
+
+    <!--装修计算器图片-->
+    <integer-array name="compute">
+        <item>@mipmap/home_decoration_calculator</item>
+        <item>@mipmap/home_guide</item>
+        <item>@mipmap/home_group_buying</item>
+    </integer-array>
+
+    <!--装修大学图片-->
+    <integer-array name="decoration_uv">
+        <item>@mipmap/decoration_uv1</item>
+        <item>@mipmap/decoration_uv2</item>
     </integer-array>
 
     <!--订单管理Tab标题-->

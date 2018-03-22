@@ -33,7 +33,7 @@ public class MainRxPresenterImp extends BaseRxPresenter<MainContract.View> imple
     public ArrayList<CustomTabEntity> getTabEntity() {
         ArrayList<CustomTabEntity> mTabEntities = new ArrayList<>();
         Log.d("mActivity","mActivity = null is "+ (mActivity ==null));
-        TypedArray mIconUnSelectIds = mActivity.getResources().obtainTypedArray(R.array.main_tab_un_select);
+        TypedArray mIconUnSelectIds = mActivity.getResources().obtainTypedArray(R.array.main_tab_unselect);
         TypedArray mIconSelectIds = mActivity.getResources().obtainTypedArray(R.array.main_tab_select);
         String[] mainTitles = mActivity.getResources().getStringArray(R.array.main_title);
         for (int i = 0; i < mainTitles.length; i++) {

@@ -21,12 +21,19 @@
     <string name="fix_home">"房医生"</string>
     <string name="design_pics">"效果图"</string>
     <string name="decoration_university">"装修大学"</string>
-    <string name="recreational">"休闲娱乐"</string>
+    <string name="entertainment">"休闲娱乐"</string>
+    <string name="popular_brand">"热门品牌"</string>
+
+    <string name="renderings">"效果图"</string>
+    <string name="read_more">"查看更多"</string>
+
 
     //找设计师
     <string name="find_designer_title">"找设计师"</string>
 
     //我的收藏
     <string name="my_collection_title">"我的收藏"</string>
+
+    <string name="area_pattern">%s㎡/%s</string>
 
 </resources>

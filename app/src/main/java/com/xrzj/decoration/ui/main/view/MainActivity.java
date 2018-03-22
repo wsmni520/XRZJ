@@ -36,6 +36,7 @@ public class MainActivity extends BaseAppCompatActivity<MainContract.Presenter> 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setSteepStatusBar(true);
         super.onCreate(savedInstanceState);
     }
 
@@ -104,10 +105,10 @@ public class MainActivity extends BaseAppCompatActivity<MainContract.Presenter> 
 
         Log.d("MainActivity","mTbBottom is null " + (mTbBottom ==null));
         mTbBottom.setTabData(mTabEntities);
-        //ctlTable.showDot(3);                   //显示红点
-        //ctlTable.showMsg(2,5);                 //显示未读信息
-        //ctlTable.showMsg(1,3);                 //显示未读信息
-        //ctlTable.setMsgMargin(1, 2, 2);        //显示红点信息位置
+        //mTbBottom.showDot(3);                   //显示红点
+        //mTbBottom.showMsg(2,5);                 //显示未读信息
+        //mTbBottom.showMsg(1,3);                 //显示未读信息
+        //mTbBottom.setMsgMargin(1, 2, 2);        //显示红点信息位置
         mTbBottom.setOnTabSelectListener(new OnTabSelectListener() {
             @Override
             public void onTabSelect(int position) {

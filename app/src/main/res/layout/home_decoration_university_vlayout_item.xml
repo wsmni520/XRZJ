@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="11dp"
+                android:background="@color/white"
+                android:paddingRight="11dp">
+
+    <ImageView
+        android:id="@+id/decoration_uv_iv"
+        android:layout_width="@dimen/decoration_uv_iv_width"
+        android:layout_height="@dimen/decoration_uv_iv_height"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/bg_small_magnolia_trees_min"/>
+
+    <TextView
+        android:id="@+id/decoration_uv_news_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_toEndOf="@id/decoration_uv_iv"
+        android:text="@string/test"
+        style="@style/DecorationUvNewsTextStyle"/>
+
+    <TextView
+        android:id="@+id/decoration_strategy_tv"
+        android:layout_alignBottom="@+id/decoration_uv_iv"
+        android:layout_marginStart="@dimen/decoration_strategy_marginLeft"
+        android:layout_toEndOf="@+id/decoration_uv_iv"
+        android:text="@string/decoration_strategy"
+        style="@style/GreenTextStyle"/>
+
+    <TextView
+        android:id="@+id/decoration_uv_news_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:textSize="@dimen/decoration_uv_date_text_size"
+        android:text="@string/test_date"
+        android:textColor="@color/decoration_uv_date_text_color"
+        android:layout_alignBottom="@+id/decoration_uv_iv"/>
+
+</RelativeLayout>

@@ -4,29 +4,25 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical"
-              android:background="@android:color/white" >
+              android:background="@color/main_bg" >
 
     <include layout="@layout/main_viewpager"/>
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="1px"
+        android:layout_height="@dimen/divide_line_height"
         android:background="@color/gray_black"/>
 
     <com.flyco.tablayout.CommonTabLayout
         android:id="@+id/tb_bottom"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="#90ffffff"
-        tl:tl_iconHeight="23dp"
-        tl:tl_iconWidth="23dp"
-        tl:tl_indicator_color="#2C97DE"
-        tl:tl_indicator_height="0dp"
-        tl:tl_textSelectColor="#2C97DE"
-        tl:tl_textUnselectColor="#66000000"
-        tl:tl_textsize="12sp"
-        tl:tl_underline_color="#DDDDDD"
-        tl:tl_underline_height="1dp"/>
+        android:layout_height="@dimen/main_tl_layout_height"
+        android:background="@color/white"
+        tl:tl_iconHeight="@dimen/main_tl_iconHeight"
+        tl:tl_iconWidth="@dimen/main_tl_iconWidth"
+        tl:tl_textSelectColor="@color/botoom_tab_select_color"
+        tl:tl_textUnselectColor="@color/botoom_tab_unselectolor_color"
+        tl:tl_textsize="@dimen/main_tl_textSize"/>
 
 
 </LinearLayout>

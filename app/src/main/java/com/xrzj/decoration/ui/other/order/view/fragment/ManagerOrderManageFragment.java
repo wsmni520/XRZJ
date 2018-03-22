@@ -11,7 +11,7 @@ public class ManagerOrderManageFragment extends BaseFragment {
 
     @Override
     public int getContentView() {
-        return R.layout.fragment_manager_order_manage;
+        return R.layout.manager_order_manage_fragment;
     }
 
     @Override

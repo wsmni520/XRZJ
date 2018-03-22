@@ -50,7 +50,7 @@ public class OrderManageActivity extends BaseAppCompatActivity<OrderManageContra
 
     @Override
     public int getContentView() {
-        return R.layout.activity_order_manage;
+        return R.layout.order_manage_activity;
     }
 
     @Override

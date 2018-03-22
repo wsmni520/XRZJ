@@ -1,7 +1,7 @@
 package com.xrzj.decoration.ztest.test1;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -10,9 +10,20 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.xrzj.decoration.R;
+import com.xrzj.decoration.utils.SharedPreferencesUtils;
 
-public class TestActivity extends AppCompatActivity implements ITestView,View.OnClickListener{
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 
+public class TestActivity extends AppCompatActivity implements ITestView, View.OnClickListener {
+
+    @BindView(R.id.key)
+    TextView mKey;
+    @BindView(R.id.token)
+    TextView mToken;
+    @BindView(R.id.gettoken)
+    Button mGettoken;
     private TextView mIp;
     private TextView mCountry;
     private TextView mArea;
@@ -26,11 +37,13 @@ public class TestActivity extends AppCompatActivity implements ITestView,View.On
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.d("TestActivity","onCreate");
+        Log.d("TestActivity", "onCreate");
         setContentView(R.layout.activity_test);
+        ButterKnife.bind(this);
         initViews();
         mTestPresenter = new TestPresenter(this);
         mBtn.setOnClickListener(this);
+        mTestPresenter.setActivity(this);
     }
 
 
@@ -47,12 +60,24 @@ public class TestActivity extends AppCompatActivity implements ITestView,View.On
 
     @Override
     public void searchSuccess() {
-        Toast.makeText(this,"success",Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "success", Toast.LENGTH_SHORT).show();
     }
 
     @Override
     public void searchFailed(String errorMessage) {
 
+    }
+
+    @Override
+    public void showKey(String bean) {
+        Log.d("TestActivity", "showKey");
+        SharedPreferencesUtils.putString(this, "key", bean);
+        mKey.setText(bean);
+    }
+
+    @Override
+    public void showToken(String bean) {
+        mToken.setText(bean);
     }
 
     @Override
@@ -67,15 +92,22 @@ public class TestActivity extends AppCompatActivity implements ITestView,View.On
 
     @Override
     public void showErro() {
-        Toast.makeText(this,"erro",Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "erro", Toast.LENGTH_SHORT).show();
     }
 
     @Override
+    @OnClick(R.id.gettoken)
     public void onClick(View v) {
-        Log.d("TestActivity","onClick");
-        if(v.getId()== R.id.seach){
-
-            mTestPresenter.search(mInput.getText().toString());
+        Log.d("TestActivity", "onClick");
+        switch (v.getId()) {
+            case R.id.seach:
+                mTestPresenter.getpublicKey();
+                break;
+            case R.id.gettoken:
+                mTestPresenter.gettoken();
+                break;
+            default:
+                break;
         }
     }
 }

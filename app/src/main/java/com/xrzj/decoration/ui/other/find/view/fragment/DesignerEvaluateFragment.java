@@ -15,7 +15,7 @@ public class DesignerEvaluateFragment extends BaseFragment {
 
     @Override
     public int getContentView() {
-        return R.layout.fragment_designer_evaluate;
+        return R.layout.designer_evaluate_fragment;
     }
 
     @Override
