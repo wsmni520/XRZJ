@@ -84,7 +84,7 @@
         android:layout_marginRight="50dp"
         android:layout_toLeftOf="@+id/appeal_order_btn"
         android:text="查看"
-        android:background="@drawable/rectangle_radius_shape"/>
+        android:background="@drawable/radius_rectangle_orange"/>
     <Button
         android:id="@+id/appeal_order_btn"
         android:layout_width="50dp"
@@ -94,7 +94,7 @@
         android:layout_marginRight="50dp"
         android:layout_toLeftOf="@+id/evaluate_order_btn"
         android:text="申诉"
-        android:background="@drawable/rectangle_radius_shape"/>
+        android:background="@drawable/radius_rectangle_orange"/>
     <Button
         android:id="@+id/evaluate_order_btn"
         android:layout_width="50dp"
@@ -103,7 +103,7 @@
         android:layout_below="@+id/order_state"
         android:layout_alignParentRight="true"
         android:text="评价"
-        android:background="@drawable/rectangle_radius_shape"/>
+        android:background="@drawable/radius_rectangle_orange"/>
     <Button
         android:id="@+id/payfor_order_btn"
         android:layout_width="60dp"
@@ -113,7 +113,7 @@
         android:layout_alignParentRight="true"
         android:visibility="gone"
         android:text="立即支付"
-        android:background="@drawable/rectangle_radius_shape"/>
+        android:background="@drawable/radius_rectangle_orange"/>
 
     <Button
         android:id="@+id/cancel_order_btn"
@@ -134,7 +134,7 @@
         android:layout_alignParentRight="true"
         android:visibility="gone"
         android:text="确认"
-        android:background="@drawable/rectangle_radius_shape"/>
+        android:background="@drawable/radius_rectangle_orange"/>
 
 
 

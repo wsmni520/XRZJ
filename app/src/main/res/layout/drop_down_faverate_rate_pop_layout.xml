@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:paddingTop="20dp">
+
+
+    <TextView
+        android:id="@+id/faverate_rate_choose_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:text="好评率选择"
+        android:textColor="@color/home_function_btn_text_color"
+        android:textSize="16sp"/>
+
+
+    <LinearLayout
+        android:id="@+id/faverate_rate_choose_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/faverate_rate_choose_tv"
+        android:layout_marginEnd="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rate_100_precent_tv"
+                style="@style/LevelTextViewStyle"
+                android:text="100%"/>
+
+            <TextView
+                android:id="@+id/rate_96_precent_tv"
+                style="@style/LevelTextViewStyle"
+                android:layout_marginTop="15dp"
+                android:text="96%以上"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rate_99_precent_tv"
+                style="@style/LevelTextViewStyle"
+                android:text="99%以上"/>
+
+            <TextView
+                android:id="@+id/rate_95_precent_tv"
+                style="@style/LevelTextViewStyle"
+                android:layout_marginTop="15dp"
+                android:text="95%以上"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rate_98_precent_tv"
+                style="@style/LevelTextViewStyle"
+                android:text="98%以上"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rate_97_precent_tv"
+                style="@style/LevelTextViewStyle"
+                android:text="97%以上"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/faverate_rate_choose_ll"
+        android:layout_marginTop="30dp"
+        android:paddingEnd="21dp"
+        android:paddingStart="21dp">
+
+        <Button
+            android:id="@+id/button"
+            style="@style/SansBlodTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/radius_rectangle_gray"
+            android:text="不限条件"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/gray_small_text_color"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/radius_rectangle_green"
+            android:text="确定"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

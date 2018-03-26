@@ -10,22 +10,28 @@ public class Constant {
     public interface VIEW_TYPE{
         //轮播图
         int BANNER = 1;
-        //功能按钮
-        int FUNCTION_BTN = 2;
+        //分栏1
+        int GRID_TWO = 2;
+        //分栏2
+        int GRID_THREE = 3;
+        //分栏3
+        int GRID_FOUR = 4;
         //标题栏
-        int TITLE_BAR = 3;
-        //装修相关
-        int DECORATIONRELEVANT = 4;
-        //效果图
-        int RENDERINGS = 5;
+        int TITLE_BAR = 5;
+        //一拖二
+        int ONE_PLUS_TWO = 6;
+        //自定义1
+        int DEFINE_ONE = 7;
+        //自定义2
+        int DEFINE_TWO = 8;
         //跑马灯
-        int MARQUEE = 6;
-        //装修大学
-        int DECORATIONUV = 7 ;
-        //热门品牌
-        int POPULAR_BRAND = 8;
-        //休闲娱乐
-        int ENTERTAINMENT = 9;
+        int MARQUEE_ONE = 9;
+        //列表1
+        int LIST_ONE = 10;
+        //下拉框
+        int DROP_DOWN_BOX = 11;
+        //固定位置
+        int Fixed_POSITION = 12;
     }
 
     public interface ENTER_TYPE{

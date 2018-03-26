@@ -145,7 +145,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="10dp"
-        android:background="@drawable/rectangle_radius_shape"
+        android:background="@drawable/radius_rectangle_orange"
         android:text="注册账号"/>
 
 </LinearLayout>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:paddingTop="20dp">
+
+
+    <TextView
+        android:id="@+id/rank_interval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:text="等级区间"
+        android:textColor="@color/home_function_btn_text_color"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:id="@+id/level_input_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rank_interval"
+        android:layout_marginEnd="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="21dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_et_shape_has_stroke"
+            android:gravity="center"
+            android:hint="最低等级"
+            android:inputType="number"
+            android:textSize="12sp"/>
+
+        <View
+            style="@style/DeepUnderLine"
+            android:layout_width="12dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="3dp"
+            android:layout_marginStart="3dp"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_et_shape_has_stroke"
+            android:gravity="center"
+            android:hint="最高等级"
+            android:inputType="number"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/level_choose_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/level_input_ll"
+        android:layout_marginEnd="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/level_1_tv"
+                style="@style/LevelTextViewStyle"
+                android:text="等级1"/>
+
+            <TextView
+                android:id="@+id/level_5_tv"
+                style="@style/LevelTextViewStyle"
+                android:layout_marginTop="15dp"
+                android:text="等级5"/>
+
+            <TextView
+                android:id="@+id/level_9_tv"
+                style="@style/LevelTextViewStyle"
+                android:layout_marginTop="15dp"
+                android:text="等级9"/>
+
+            <TextView
+                android:id="@+id/level_13_tv"
+                style="@style/LevelTextViewStyle"
+                android:layout_marginTop="15dp"
+                android:text="等级13"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/level_2_tv"
+                style="@style/LevelTextViewStyle"
+                android:text="等级2"/>
+
+            <TextView
+                android:id="@+id/level_6_tv"
+                style="@style/LevelTextViewStyle"
+                android:layout_marginTop="15dp"
+                android:text="等级6"/>
+
+            <TextView
+                android:id="@+id/level_10_tv"
+                style="@style/LevelTextViewStyle"
+                android:layout_marginTop="15dp"
+                android:text="等级10"/>
+
+            <TextView
+                android:id="@+id/level_14_tv"
+                style="@style/LevelTextViewStyle"
+                android:layout_marginTop="15dp"
+                android:text="等级14"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/level_3_tv"
+                style="@style/LevelTextViewStyle"
+                android:text="等级3"/>
+
+            <TextView
+                android:id="@+id/level_7_tv"
+                style="@style/LevelTextViewStyle"
+                android:layout_marginTop="15dp"
+                android:text="等级7"/>
+
+            <TextView
+                android:id="@+id/level_11_tv"
+                style="@style/LevelTextViewStyle"
+                android:layout_marginTop="15dp"
+                android:text="等级11"/>
+
+            <TextView
+                android:id="@+id/level_15_tv"
+                style="@style/LevelTextViewStyle"
+                android:layout_marginTop="15dp"
+                android:text="等级15"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/level_4_tv"
+                style="@style/LevelTextViewStyle"
+                android:text="等级4"/>
+
+            <TextView
+                android:id="@+id/level_8_tv"
+                style="@style/LevelTextViewStyle"
+                android:layout_marginTop="15dp"
+                android:text="等级8"/>
+
+            <TextView
+                android:id="@+id/level_12_tv"
+                style="@style/LevelTextViewStyle"
+                android:layout_marginTop="15dp"
+                android:text="等级12"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divide_line"
+        style="@style/DeepUnderLine"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/level_choose_ll"
+        android:layout_marginTop="15dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="21dp"
+        android:paddingEnd="21dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/divide_line">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/radius_rectangle_gray"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textColor="@color/gray_small_text_color"
+            style="@style/SansBlodTextStyle"
+            android:text="不限条件"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_marginStart="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:background="@drawable/radius_rectangle_green"
+            android:text="确定"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

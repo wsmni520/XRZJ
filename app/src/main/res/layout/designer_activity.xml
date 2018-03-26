@@ -90,7 +90,7 @@
             android:layout_marginRight="5dp"
             android:text="咨询"
             android:textColor="@color/white"
-            android:background="@drawable/rectangle_radius_shape"/>
+            android:background="@drawable/radius_rectangle_orange"/>
 
         <Button
             android:layout_width="0dp"
@@ -99,7 +99,7 @@
             android:layout_weight="1"
             android:text="找他设计"
             android:textColor="@color/white"
-            android:background="@drawable/rectangle_radius_shape"/>/>
+            android:background="@drawable/radius_rectangle_orange"/>/>
 
 
     </LinearLayout>

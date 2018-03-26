@@ -29,6 +29,7 @@ import com.xrzj.decoration.ui.home.model.HomeModel;
 import com.xrzj.decoration.ui.home.model.IHomeModel;
 import com.xrzj.decoration.utils.AppUtils;
 import com.xrzj.decoration.widget.MarqueeView;
+import com.xrzj.decoration.widget.SpaceItemDecoration;
 import com.youth.banner.Banner;
 
 import java.util.ArrayList;
@@ -123,7 +124,7 @@ public class HomePresenter extends BaseRxPresenter<HomeContract.View> implements
         // 控制子元素之间的水平间距
         gridLayoutHelper.setHGap(0);
         gridLayoutHelper.setBgColor(Color.WHITE);
-        return new BaseDelegateAdapter(mActivity, gridLayoutHelper, R.layout.home_functionbtn_vlayout_item, 8, Constant.VIEW_TYPE.FUNCTION_BTN) {
+        return new BaseDelegateAdapter(mActivity, gridLayoutHelper, R.layout.home_functionbtn_vlayout_item, 8, Constant.VIEW_TYPE.GRID_FOUR) {
             @Override
             public void onBindViewHolder(BaseViewHolder holder, @SuppressLint("RecyclerView") final int position) {
                 super.onBindViewHolder(holder, position);
@@ -157,16 +158,16 @@ public class HomePresenter extends BaseRxPresenter<HomeContract.View> implements
         }
         proPic.recycle();
         GridLayoutHelper gridLayoutHelper = new GridLayoutHelper(3);
-        gridLayoutHelper.setPadding(AppUtils.dip2px(mActivity, 11),
+        gridLayoutHelper.setPadding(AppUtils.dip2px(mActivity, 16),
                 0,
-                AppUtils.dip2px(mActivity, 11),
+                AppUtils.dip2px(mActivity, 16),
                 0);
         // 控制子元素之间的垂直间距
         gridLayoutHelper.setVGap(AppUtils.dip2px(mActivity, 6));
         // 控制子元素之间的水平间距
         gridLayoutHelper.setHGap(AppUtils.dip2px(mActivity, 6));
         gridLayoutHelper.setBgColor(Color.WHITE);
-        return new BaseDelegateAdapter(mActivity, gridLayoutHelper, R.layout.home_popular_brand_vlayout_item, 9, Constant.VIEW_TYPE.POPULAR_BRAND) {
+        return new BaseDelegateAdapter(mActivity, gridLayoutHelper, R.layout.home_popular_brand_vlayout_item, 9, Constant.VIEW_TYPE.GRID_THREE) {
             @Override
             public void onBindViewHolder(BaseViewHolder holder, @SuppressLint("RecyclerView") final int position) {
                 super.onBindViewHolder(holder, position);
@@ -212,7 +213,7 @@ public class HomePresenter extends BaseRxPresenter<HomeContract.View> implements
     @Override
     public BaseDelegateAdapter initMarqueeViewColumn() {
         LinearLayoutHelper linearLayoutHelper = new LinearLayoutHelper();
-        return new BaseDelegateAdapter(mActivity, linearLayoutHelper, R.layout.home_marquee_vlayout_item, 1, Constant.VIEW_TYPE.MARQUEE) {
+        return new BaseDelegateAdapter(mActivity, linearLayoutHelper, R.layout.home_marquee_vlayout_item, 1, Constant.VIEW_TYPE.MARQUEE_ONE) {
             @Override
             public void onBindViewHolder(BaseViewHolder holder, int position) {
                 super.onBindViewHolder(holder, position);
@@ -249,16 +250,16 @@ public class HomePresenter extends BaseRxPresenter<HomeContract.View> implements
         }
         proPic.recycle();
         GridLayoutHelper gridLayoutHelper = new GridLayoutHelper(2);
-        gridLayoutHelper.setPadding(AppUtils.dip2px(mActivity, 11),
+        gridLayoutHelper.setPadding(AppUtils.dip2px(mActivity, 16),
                 0,
-                AppUtils.dip2px(mActivity, 11),
+                AppUtils.dip2px(mActivity, 16),
                 AppUtils.dip2px(mActivity, 15));
         // 控制子元素之间的垂直间距
-        gridLayoutHelper.setVGap(AppUtils.dip2px(mActivity, 6));
+        gridLayoutHelper.setVGap(AppUtils.dip2px(mActivity, 9));
         // 控制子元素之间的水平间距
-        gridLayoutHelper.setHGap(AppUtils.dip2px(mActivity, 6));
+        gridLayoutHelper.setHGap(AppUtils.dip2px(mActivity, 9));
         gridLayoutHelper.setBgColor(Color.WHITE);
-        return new BaseDelegateAdapter(mActivity, gridLayoutHelper, R.layout.home_entertainment_vlayout_item, 4, Constant.VIEW_TYPE.ENTERTAINMENT) {
+        return new BaseDelegateAdapter(mActivity, gridLayoutHelper, R.layout.home_entertainment_vlayout_item, 4, Constant.VIEW_TYPE.GRID_TWO) {
             @Override
             public void onBindViewHolder(BaseViewHolder holder, @SuppressLint("RecyclerView") final int position) {
                 super.onBindViewHolder(holder, position);
@@ -297,7 +298,7 @@ public class HomePresenter extends BaseRxPresenter<HomeContract.View> implements
             images.add(proPic.getResourceId(i, R.mipmap.ic_data_picture));
         }
         proPic.recycle();
-        return new BaseDelegateAdapter(mActivity, onePlusNLayoutHelper, R.layout.home_compute_vlayout_item, 3, Constant.VIEW_TYPE.DECORATIONRELEVANT) {
+        return new BaseDelegateAdapter(mActivity, onePlusNLayoutHelper, R.layout.home_compute_vlayout_item, 3, Constant.VIEW_TYPE.ONE_PLUS_TWO) {
             @Override
             public void onBindViewHolder(BaseViewHolder holder, @SuppressLint("RecyclerView") final int position) {
                 super.onBindViewHolder(holder, position);
@@ -334,7 +335,7 @@ public class HomePresenter extends BaseRxPresenter<HomeContract.View> implements
         //设置间隔高度
         linearLayoutHelper.setBgColor(Color.WHITE);
         linearLayoutHelper.setDividerHeight(AppUtils.dip2px(mActivity, 10));
-        return new BaseDelegateAdapter(mActivity, linearLayoutHelper, R.layout.home_decoration_university_vlayout_item, 2, Constant.VIEW_TYPE.DECORATIONUV) {
+        return new BaseDelegateAdapter(mActivity, linearLayoutHelper, R.layout.home_decoration_university_vlayout_item, 2, Constant.VIEW_TYPE.LIST_ONE) {
             @Override
             public void onBindViewHolder(BaseViewHolder holder, @SuppressLint("RecyclerView") final int position) {
                 super.onBindViewHolder(holder, position);
@@ -365,7 +366,7 @@ public class HomePresenter extends BaseRxPresenter<HomeContract.View> implements
         //设置Item个数
         linearLayoutHelper.setItemCount(1);
         linearLayoutHelper.setBgColor(Color.WHITE);
-        return new BaseDelegateAdapter(mActivity, linearLayoutHelper, R.layout.home_renderings_vlayout_item, 1, Constant.VIEW_TYPE.RENDERINGS) {
+        return new BaseDelegateAdapter(mActivity, linearLayoutHelper, R.layout.home_renderings_vlayout_item, 1, Constant.VIEW_TYPE.DEFINE_ONE) {
             @Override
             public void onBindViewHolder(BaseViewHolder holder, @SuppressLint("RecyclerView") final int position) {
                 super.onBindViewHolder(holder, position);
@@ -373,6 +374,7 @@ public class HomePresenter extends BaseRxPresenter<HomeContract.View> implements
                 List<Renderings> renderingsList = mHomeModel.getRenderingsList();
                 LinearLayoutManager linearLayoutManager = new LinearLayoutManager(mActivity);
                 linearLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
+                renderingsRecycler.addItemDecoration(new SpaceItemDecoration(AppUtils.dip2px(mActivity,16),AppUtils.dip2px(mActivity,7)));
                 renderingsRecycler.setLayoutManager(linearLayoutManager);
                 RenderingsAdapter renderingsAdapter = new RenderingsAdapter(renderingsList,mActivity);
                 renderingsRecycler.setAdapter(renderingsAdapter);

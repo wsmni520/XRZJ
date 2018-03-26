@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fafafa">
+
+        <RelativeLayout
+            android:id="@+id/hot_designer_rank_ll"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="16dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/hot_designer_rank_iv"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/hot_label"/>
+
+            <TextView
+                android:id="@+id/hot_designer_rank_tv"
+                style="@style/SansBlodTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/hot_designer_rank_iv"
+                android:gravity="center"
+                android:text="热门排行"
+                android:textColor="@color/blod_black_text_color"
+                android:textSize="12sp"/>
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/hot_designer_rank_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hot_designer_rank_ll"
+            android:layout_marginTop="8dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+
+    <View
+        style="@style/DeepUnderLine"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+
+</LinearLayout>

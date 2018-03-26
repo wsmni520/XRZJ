@@ -12,13 +12,13 @@
     <dimen name="home_funcBtn_text_img_margin">7dp</dimen>
 
     <!--栏目标题字体-->
-    <dimen name="main_column_title_paddingTop">23dp</dimen>
+    <dimen name="main_column_title_paddingTop">33dp</dimen>
     <dimen name="main_column_title_paddingBottom">23dp</dimen>
-    <dimen name="main_column_title_paddingLeft">11dp</dimen>
+    <dimen name="main_column_title_paddingLeft">16dp</dimen>
     <dimen name="main_column_title_text_size">19sp</dimen>
     <!--查看更多-->
     <dimen name="main_column_read_more_text_size">15sp</dimen>
-    <dimen name="main_column_read_more_paddingRight">11dp</dimen>
+    <dimen name="main_column_read_more_paddingRight">16dp</dimen>
 
     <!--热门品牌-->
     <!--<dimen name="popular_column_paddingLeft">16</dimen>-->

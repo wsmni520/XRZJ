@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="13dp"
+                android:paddingTop="10dp">
+
+    <RelativeLayout
+        android:id="@+id/designer_photo_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp">
+
+        <com.xrzj.decoration.widget.CircleImageView
+            android:id="@+id/designer_photo_iv"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@mipmap/bg_small_magnolia_trees_min"/>
+
+        <RelativeLayout
+            android:id="@+id/level_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/designer_photo_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp">
+
+            <ImageView
+                android:id="@+id/level_iv"
+                android:layout_width="49dp"
+                android:layout_height="18dp"
+                android:src="@mipmap/gold_medal_label"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/level_iv"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="6dp"
+                android:text="LV15"
+                android:textColor="@color/white"
+                android:textSize="10sp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/designer_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/designer_photo_ll">
+
+        <TextView
+            android:id="@+id/designer_name_tv"
+            style="@style/SansBlodTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="李胜男"
+            android:textColor="@color/blod_black_text_color"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/designer_identification_iv"
+            android:layout_width="38dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="9dp"
+            android:layout_toEndOf="@+id/designer_name_tv"
+            android:background="@drawable/faverate_circle_shape"
+            android:gravity="center"
+            android:text="已认证"
+            android:textColor="@color/green_text_color"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/designer_safeguards_iv"
+            android:layout_width="38dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_toRightOf="@+id/designer_identification_iv"
+            android:background="@drawable/faverate_circle_shape"
+            android:gravity="center"
+            android:text="保证金"
+            android:textColor="@color/green_text_color"
+            android:textSize="10sp"/>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/designer_ll"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp">
+
+        <TextView
+            android:id="@+id/rmb_tv"
+            style="@style/SansBlodTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/designer_per_price_tv"
+            android:text="¥"
+            android:textColor="@color/red_text"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/designer_per_price_tv"
+            style="@style/SansBlodTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/centiare_tv"
+            android:text="d%/"
+            android:textColor="@color/red_text"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/centiare_tv"
+            style="@style/SansBlodTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="㎡"
+            android:textColor="@color/red_text"
+            android:textSize="17sp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/design_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/designer_ll"
+        android:layout_below="@+id/designer_ll"
+        android:layout_marginTop="14dp"
+        android:text="10年"
+        android:textColor="@color/red_text"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/design_experience"
+        style="@style/GraySmallTextStyle"
+        android:layout_alignBaseline="@+id/design_year"
+        android:layout_alignBottom="@+id/design_year"
+        android:layout_toEndOf="@+id/design_year"
+        android:text="设计经验"/>
+
+    <TextView
+        android:id="@+id/design_favorable_rate_tv"
+        style="@style/GraySmallTextStyle"
+        android:layout_alignBaseline="@+id/design_experience"
+        android:layout_alignBottom="@+id/design_experience"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/design_experience"
+        android:text="d%"
+        android:textColor="@color/red_text"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/favorable_tv"
+        style="@style/GraySmallTextStyle"
+        android:layout_alignBaseline="@+id/design_experience"
+        android:layout_alignBottom="@+id/design_experience"
+        android:layout_toEndOf="@+id/design_favorable_rate_tv"
+        android:text="好评"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/design_product_num_tv"
+        style="@style/GraySmallTextStyle"
+        android:layout_alignBaseline="@+id/design_favorable_rate_tv"
+        android:layout_alignBottom="@+id/design_favorable_rate_tv"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/favorable_tv"
+        android:text="d%作品"/>
+
+    <TextView
+        android:id="@+id/designer_transactions_num_tv"
+        style="@style/GraySmallTextStyle"
+        android:layout_alignBottom="@+id/designer_photo_ll"
+        android:layout_alignStart="@+id/designer_ll"
+        android:layout_marginBottom="2dp"
+        android:text="d%成交"/>
+
+    <TextView
+        android:id="@+id/designer_order_num_tv"
+        style="@style/GraySmallTextStyle"
+        android:layout_alignBaseline="@+id/designer_transactions_num_tv"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/designer_transactions_num_tv"
+        android:text="d%人已预约"/>
+
+    <TextView
+        android:id="@+id/designer_collection"
+        style="@style/GraySmallTextStyle"
+        android:layout_alignBaseline="@+id/designer_order_num_tv"
+        android:layout_alignBottom="@+id/designer_order_num_tv"
+        android:layout_marginStart="14dp"
+        android:layout_toEndOf="@+id/designer_order_num_tv"
+        android:text="d%收藏"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/design_rederings_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/designer_photo_ll"
+        android:layout_marginTop="11dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>

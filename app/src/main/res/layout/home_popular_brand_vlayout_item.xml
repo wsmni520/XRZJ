@@ -9,14 +9,24 @@
     app:cardCornerRadius="3dp"
     app:cardElevation="3dp">
 
-    <ImageView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/iv_popular_brand_ic"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:padding="7dp"
-        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:id="@+id/iv_popular_brand_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_popular_brand_ic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:scaleType="centerCrop"/>
+
+
+    </RelativeLayout>
+
+
 
 </android.support.v7.widget.CardView>

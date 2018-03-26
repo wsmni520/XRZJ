@@ -4,12 +4,12 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.xrzj.decoration.R;
 import com.xrzj.decoration.base.adapter.BaseRecyclerViewAdapter;
 import com.xrzj.decoration.ui.other.find.model.bean.Designer;
+import com.xrzj.decoration.widget.HeadPhotoStatusView;
 
 import java.util.List;
 
@@ -39,10 +39,7 @@ public class FindDesignerRankAdapter extends BaseRecyclerViewAdapter<FindDesigne
     public void onBindViewHolder(ViewHolder holder, int position) {
         holder.mDesignerPhotoIv.setImageResource(R.mipmap.bg_small_magnolia_trees_min);
         holder.mDesignerNameTv.setText(mDesigners.get(position).getName());
-        holder.mDesignerPopularityTv.setText(mDesigners.get(position).getPopularity());
-        holder.mDesignerRankTv.setText(mDesigners.get(position).getRank());
     }
-
 
     @Override
     public int getItemCount() {
@@ -51,17 +48,19 @@ public class FindDesignerRankAdapter extends BaseRecyclerViewAdapter<FindDesigne
 
     static class ViewHolder extends RecyclerView.ViewHolder {
         @BindView(R.id.designer_photo_iv)
-        ImageView mDesignerPhotoIv;
+        HeadPhotoStatusView mDesignerPhotoIv;
         @BindView(R.id.designer_name_tv)
         TextView mDesignerNameTv;
-        @BindView(R.id.designer_popularity_tv)
-        TextView mDesignerPopularityTv;
-        @BindView(R.id.designer_rank_tv)
-        TextView mDesignerRankTv;
 
         ViewHolder(View itemView, final FindDesignerRankAdapter adapter) {
             super(itemView);
             ButterKnife.bind(this, itemView);
+            mDesignerPhotoIv.setOnClickListener(new View.OnClickListener(){
+                @Override
+                public void onClick(View v) {
+                    adapter.onItemHolderClick(ViewHolder.this);
+                }
+            });
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

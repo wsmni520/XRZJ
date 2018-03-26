@@ -4,14 +4,14 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical"
-              android:background="@color/main_bg" >
+              android:background="@color/gray_bg" >
 
     <include layout="@layout/main_viewpager"/>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/divide_line_height"
-        android:background="@color/gray_black"/>
+        android:background="@color/tab_divider_color"/>
 
     <com.flyco.tablayout.CommonTabLayout
         android:id="@+id/tb_bottom"

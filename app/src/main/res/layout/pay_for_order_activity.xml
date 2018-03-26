@@ -232,7 +232,7 @@
             android:layout_height="wrap_content"
             android:text="确认"
             android:textColor="@color/white"
-            android:background="@drawable/rectangle_radius_shape"
+            android:background="@drawable/radius_rectangle_orange"
             android:layout_centerVertical="true"
             android:textSize="14dp"/>
 

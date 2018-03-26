@@ -6,18 +6,19 @@
 
     <ImageView
         android:id="@+id/design_rederings_iv"
-        android:layout_width="223dp"
-        android:layout_height="126dp"
+        android:layout_width="335dp"
+        android:layout_height="189dp"
         android:scaleType="centerCrop"
         android:src="@mipmap/bg_small_magnolia_trees_min"/>
 
     <RelativeLayout
         android:id="@+id/design_titlte_rl"
         android:layout_width="wrap_content"
-        android:layout_height="14dp"
+        android:layout_height="19dp"
+
         android:layout_alignParentStart="true"
         android:layout_below="@+id/design_rederings_iv"
-        android:layout_marginTop="14dp">
+        android:layout_marginTop="18dp">
 
         <TextView
             android:id="@+id/position_tv"
@@ -26,7 +27,8 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:text="花样年华城 "
-            android:textSize="11sp"/>
+            android:textColor="@color/blod_black_text_color"
+            android:textSize="16sp"/>
 
         <View
             android:id="@+id/divide_line"
@@ -43,13 +45,14 @@
         <TextView
             android:id="@+id/style"
             style="@style/SansBlodTextStyle"
+            android:textColor="@color/blod_black_text_color"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="2dp"
-            android:layout_toRightOf="@+id/divide_line"
+            android:layout_marginStart="2dp"
+            android:layout_toEndOf="@+id/divide_line"
             android:text="地中海风"
-            android:textSize="11sp"/>
+            android:textSize="16sp"/>
     </RelativeLayout>
 
     <TextView
@@ -57,11 +60,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/design_titlte_rl"
-        android:layout_marginLeft="2dp"
-        android:layout_marginTop="6dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="9dp"
         android:text="@string/area_pattern"
-        android:textColor="#9d9fa1"
-        android:textSize="9sp"/>
+        android:textColor="@color/gray_small_text_color"
+        android:textSize="13sp"/>
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -75,15 +78,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:textSize="9sp"/>
+            android:textColor="@color/red_text"
+            android:textSize="11sp"/>
 
         <ImageView
             android:id="@+id/faverate_iv"
-            android:layout_width="23dp"
-            android:layout_height="23dp"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
             android:layout_marginEnd="6dp"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="3dp"
+            android:layout_marginBottom="5dp"
             android:src="@mipmap/faverate_collection"/>
 
     </RelativeLayout>

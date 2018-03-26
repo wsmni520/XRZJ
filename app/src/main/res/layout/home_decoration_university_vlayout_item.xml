@@ -2,9 +2,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingLeft="11dp"
+                android:paddingLeft="16dp"
                 android:background="@color/white"
-                android:paddingRight="11dp">
+                android:paddingRight="16dp">
 
     <ImageView
         android:id="@+id/decoration_uv_iv"
@@ -17,7 +17,7 @@
         android:id="@+id/decoration_uv_news_tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="6dp"
+        android:layout_marginStart="@dimen/decoration_strategy_marginLeft"
         android:layout_toEndOf="@id/decoration_uv_iv"
         android:text="@string/test"
         style="@style/DecorationUvNewsTextStyle"/>
@@ -37,7 +37,7 @@
         android:layout_alignParentEnd="true"
         android:textSize="@dimen/decoration_uv_date_text_size"
         android:text="@string/test_date"
-        android:textColor="@color/decoration_uv_date_text_color"
+        android:textColor="@color/gray_small_text_color"
         android:layout_alignBottom="@+id/decoration_uv_iv"/>
 
 </RelativeLayout>

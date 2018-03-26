@@ -2,9 +2,9 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/green_text_color</item>
     </style>
 
     <style name="AppTheme" parent="AppTheme.Base">
@@ -68,7 +68,7 @@
         <item name="android:paddingBottom">@dimen/main_column_title_paddingBottom</item>
         <item name="android:paddingLeft">@dimen/main_column_title_paddingLeft</item>
         <item name="android:textSize">@dimen/main_column_title_text_size</item>
-        <item name="android:textColor">@color/module_title_text_color</item>
+        <item name="android:textColor">@color/blod_black_text_color</item>
     </style>
     <!--主界面栏目查看更多样式-->
     <style name="HomeReadMoreStyle">
@@ -88,12 +88,12 @@
         <item name="android:padding">@dimen/decoration_strategy_text_padding</item>
         <item name="android:textSize">@dimen/decoration_strategy_text_size</item>
         <item name="android:background">@color/decoration_strategy_bg</item>
-        <item name="android:textColor">@color/decoration_strategy_text_color</item>
+        <item name="android:textColor">@color/green_text_color</item>
     </style>
     <!--主界面装修大学板块 新闻文本框样式-->
     <style name="DecorationUvNewsTextStyle">
         <item name="android:textSize">@dimen/decoration_uv_news_text_size</item>
-        <item name="android:textColor">@color/decoration_uv_news_text_color</item>
+        <item name="android:textColor">@color/blod_black_text_color</item>
         <item name="android:textStyle">bold</item>
         <item name="android:ellipsize">end</item>
         <item name="android:maxLines">3</item>
@@ -102,6 +102,38 @@
     <style name="SansBlodTextStyle">
         <item name="android:textStyle">bold</item>
         <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="GraySmallTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/gray_small_text_color</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TitleStyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/blod_black_text_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="LevelTextViewStyle">
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@drawable/level_tv_text_selector</item>
+        <item name="android:background">@drawable/level_tv_bg_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="SortPopTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
     </style>
 
 

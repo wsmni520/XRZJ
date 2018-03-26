@@ -22,7 +22,7 @@
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:background="@drawable/rectangle_radius_shape"
+            android:background="@drawable/radius_rectangle_orange"
             android:text="@string/login"/>
 
         <Button
@@ -31,7 +31,7 @@
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:background="@drawable/rectangle_radius_shape"
+            android:background="@drawable/radius_rectangle_orange"
             android:text="@string/regist"/>
 
     </LinearLayout>

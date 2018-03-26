@@ -89,14 +89,14 @@ public class HomeFragment extends BaseFragment<HomeContract.Presenter> implement
         //初始化九宫格
         BaseDelegateAdapter menuAdapter = mPresenter.initGvMenuColumn();
         mAdapters.add(menuAdapter);
-        //初始化装修相关 计算器
-        BaseDelegateAdapter oneplustwoAdapter = mPresenter.initDecorationRelevantColumn(5);
-        mAdapters.add(oneplustwoAdapter);
         //初始化跑马灯
         BaseDelegateAdapter marqueeViewAdapter = mPresenter.initMarqueeViewColumn();
         mAdapters.add(marqueeViewAdapter);
+        //初始化装修相关 计算器
+        BaseDelegateAdapter oneplustwoAdapter = mPresenter.initDecorationRelevantColumn(7);
+        mAdapters.add(oneplustwoAdapter);
         //初始热门品牌标题栏
-        BaseDelegateAdapter popbTitleAdapter = mPresenter.initTitle(mContext.getResources().getString(R.string.popular_brand), 5);
+        BaseDelegateAdapter popbTitleAdapter = mPresenter.initTitle(mContext.getResources().getString(R.string.popular_brand), 7);
         mAdapters.add(popbTitleAdapter);
         //初始化热门品牌栏
         BaseDelegateAdapter popularBrandAdapter = mPresenter.initPopularBrandColumn();

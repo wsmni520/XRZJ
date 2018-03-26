@@ -8,6 +8,8 @@ android {
         applicationId "com.xrzj.decoration"
         minSdkVersion 19
         targetSdkVersion 26
+        renderscriptTargetApi 25
+        renderscriptSupportModeEnabled true
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -71,4 +73,7 @@ dependencies {
     //注解
     compile 'com.jakewharton:butterknife:8.4.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+
+    //BasePopupwindow
+    compile 'com.github.razerdp:BasePopup:1.9.3'
 }

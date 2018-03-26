@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    android:background="@null">
+
+
+    <LinearLayout
+        android:id="@+id/popup_anima"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/sort_by_default"
+            style="@style/SortPopTextStyle"
+            android:text="@string/defaultSort"
+            android:textColor="@color/green_text_color"/>
+
+        <View
+            style="@style/DeepUnderLine"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            />
+
+        <TextView
+            android:id="@+id/sort_by_designer_rank_dec"
+            style="@style/SortPopTextStyle"
+            android:text="设计等级从高到低"
+            android:textColor="@color/blod_black_text_color"/>
+
+        <View
+            style="@style/DeepUnderLine"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            />
+
+        <TextView
+            android:id="@+id/sort_by_designer_rank_asc"
+            style="@style/SortPopTextStyle"
+            android:text="设计等级从低到高"
+            android:textColor="@color/blod_black_text_color"/>
+
+        <View
+            style="@style/DeepUnderLine"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            />
+
+        <TextView
+            android:id="@+id/sort_by_faverate_rate_dec"
+            style="@style/SortPopTextStyle"
+            android:text="好评率从高到低"
+            android:textColor="@color/blod_black_text_color"/>
+
+        <View
+            style="@style/DeepUnderLine"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            />
+
+        <TextView
+            android:id="@+id/sort_by_faverate_rate_asc"
+            style="@style/SortPopTextStyle"
+            android:text="好平率从低到高"
+            android:textColor="@color/blod_black_text_color"/>
+
+
+    </LinearLayout>
+</RelativeLayout>
+
