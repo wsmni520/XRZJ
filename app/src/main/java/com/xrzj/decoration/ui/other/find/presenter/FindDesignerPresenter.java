@@ -26,10 +26,12 @@ import com.xrzj.decoration.ui.other.find.adapter.FindDesignerRankAdapter;
 import com.xrzj.decoration.ui.other.find.contract.FindDesignerContract;
 import com.xrzj.decoration.ui.other.find.model.IFindDesignerModel;
 import com.xrzj.decoration.ui.other.find.model.bean.Designer;
+import com.xrzj.decoration.ui.other.find.model.bean.DesignerHotVO;
 import com.xrzj.decoration.ui.other.find.model.impl.FindDesignerModel;
 import com.xrzj.decoration.utils.AppUtils;
 import com.xrzj.decoration.widget.SpaceItemDecoration;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -42,11 +44,13 @@ public class FindDesignerPresenter extends BaseRxPresenter<FindDesignerContract.
     private IFindDesignerModel mFindDesignerModel;
     private Activity mActivity;
     private RecyclerView mRecyclerView;
+    private List<DesignerHotVO> mDesignersHotList;
 
 
     public FindDesignerPresenter(FindDesignerContract.View view) {
         super(view);
         this.mFindDesignerModel = new FindDesignerModel();
+        mDesignersHotList = new ArrayList<>();
     }
 
     @Override
@@ -88,24 +92,48 @@ public class FindDesignerPresenter extends BaseRxPresenter<FindDesignerContract.
     }
 
     @Override
-    public BaseDelegateAdapter initDesignerRankListAdapter() {
-        Log.d("Renderings", "initRenderingsColumn");
+    public List<DesignerHotVO> getDesignerHotList() {
+        Log.d("FindDesignerPresenter", "getDesignerHotList");
+        mFindDesignerModel.getDesginerHotList(new BaseModel.AsyncCallback() {
+            @Override
+            public void OnSuccessed(Object success) {
+                if(success != null){
+                    mDesignersHotList.addAll((List<DesignerHotVO>)success);
+                }
+                mDesignersRankAdapter.notifyDataSetChanged();
+            }
+
+            @Override
+            public void OnFialded(Object error) {
+
+            }
+        });
+        return mDesignersHotList;
+    }
+    private FindDesignerRankAdapter mDesignersRankAdapter;
+
+    @Override
+    public BaseDelegateAdapter initDesignerHotListAdapter() {
+
         LinearLayoutHelper linearLayoutHelper = new LinearLayoutHelper();
         linearLayoutHelper.setItemCount(1);
         linearLayoutHelper.setBgColor(Color.WHITE);
         return new BaseDelegateAdapter(mActivity, linearLayoutHelper, R.layout.find_designer_rank_vlayout_item, 1, Constant.VIEW_TYPE.DEFINE_ONE) {
+
+
+
             @Override
             public void onBindViewHolder(BaseViewHolder holder, @SuppressLint("RecyclerView") final int position) {
                 super.onBindViewHolder(holder, position);
                 RecyclerView designerRankRecycler = holder.getView(R.id.hot_designer_rank_recycler);
-                List<Designer> designersRank = mFindDesignerModel.getDesginerRankList();
                 LinearLayoutManager linearLayoutManager = new LinearLayoutManager(mActivity);
                 linearLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
                 designerRankRecycler.setLayoutManager(linearLayoutManager);
                 designerRankRecycler.addItemDecoration(new SpaceItemDecoration(AppUtils.dip2px(mActivity,16),AppUtils.dip2px(mActivity,10)));
-                FindDesignerRankAdapter designersRankAdapter = new FindDesignerRankAdapter(designersRank);
-                designerRankRecycler.setAdapter(designersRankAdapter);
-                designersRankAdapter.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+                mDesignersRankAdapter = new FindDesignerRankAdapter(mActivity,mDesignersHotList);
+                designerRankRecycler.setAdapter(mDesignersRankAdapter);
+                mDesignersRankAdapter.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                     @Override
                     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                         mView.setDesignerRankListItemClick(position);

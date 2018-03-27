@@ -24,7 +24,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-public class DesignerActivity extends BaseAppCompatActivity<DesignerContract.Presenter> implements DesignerContract.View{
+public class DesignerInfoActivity extends BaseAppCompatActivity<DesignerContract.Presenter> implements DesignerContract.View{
 
     @BindView(R.id.btnBack)
     ImageView mBtnBack;
@@ -52,7 +52,7 @@ public class DesignerActivity extends BaseAppCompatActivity<DesignerContract.Pre
 
     @Override
     public int getContentView() {
-        return R.layout.designer_activity;
+        return R.layout.designer_info_activity;
     }
 
     @Override

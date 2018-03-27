@@ -3,6 +3,7 @@ package com.xrzj.decoration.ui.other.find.view.activity;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.PopupWindow;
@@ -74,10 +75,6 @@ public class FindDesignerActivity extends BaseAppCompatActivity<FindDesignerCont
         mPresenter.setActivity(this);
         mAdapters = new LinkedList<>();
         initTitle();
-
-        //初始化设计师排行的Recycler
-        //        initDesignerRankRecycler();
-        //初始化设计师列表的Recycler
         initFindDesignerListRecycler();
 
     }
@@ -91,7 +88,7 @@ public class FindDesignerActivity extends BaseAppCompatActivity<FindDesignerCont
     private void initFindDesignerListRecycler() {
         DelegateAdapter delegateAdapter = mPresenter.initRecyclerView(mFindDesignerRecycler);
         //设计师等级列表加入集合
-        BaseDelegateAdapter designerRankAdapter = mPresenter.initDesignerRankListAdapter();
+        BaseDelegateAdapter designerRankAdapter = mPresenter.initDesignerHotListAdapter();
         mAdapters.add(designerRankAdapter);
         //下拉列表加入集合
         BaseDelegateAdapter dropBoxAdapter = mPresenter.initDropdownBoxAdapter();
@@ -111,8 +108,8 @@ public class FindDesignerActivity extends BaseAppCompatActivity<FindDesignerCont
 
     @Override
     public void initData() {
-        mPresenter.getDesignerList();
-
+        Log.d("FindDesignerPresenter", "initData");
+        mPresenter.getDesignerHotList();
     }
 
     @Override
@@ -163,20 +160,6 @@ public class FindDesignerActivity extends BaseAppCompatActivity<FindDesignerCont
     public void setDesignerListOrderItemClick(View view) {
         ChooseSortOrderPopView chooseSortOrderPopView = new ChooseSortOrderPopView(mContext);
         chooseSortOrderPopView.setBlurBackgroundEnable(true);
-//        chooseSortOrderPopView.setOnBeforeShowCallback(new BasePopupWindow.OnBeforeShowCallback() {
-//            @Override
-//            public boolean onBeforeShow(View popupRootView, View anchorView, boolean hasShowAnima) {
-//                if (mSelectedView == null) {
-//                    popup.setBlurBackgroundEnable(true);
-//                } else {
-//                    PopupBlurOption option = new PopupBlurOption();
-//                    option.setBlurView(mSelectedView)
-//                            .setFullScreen(false);
-//                    popup.setBlurOption(option);
-//                }
-//                return true;
-//            }
-//        });
         chooseSortOrderPopView.showPopupWindow();
     }
 
@@ -184,7 +167,7 @@ public class FindDesignerActivity extends BaseAppCompatActivity<FindDesignerCont
     public void setDesignerRankListItemClick(int position) {
         switch (position) {
             case 0:
-                Toast.makeText(this, "设计师等级榜0", Toast.LENGTH_SHORT).show();
+                startActivity(DesignerInfoActivity.class);
                 break;
             case 1:
                 Toast.makeText(this, "设计师等级榜1", Toast.LENGTH_SHORT).show();

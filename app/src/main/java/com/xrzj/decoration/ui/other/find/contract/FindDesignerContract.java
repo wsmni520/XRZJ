@@ -7,6 +7,9 @@ import com.alibaba.android.vlayout.DelegateAdapter;
 import com.xrzj.decoration.base.adapter.BaseDelegateAdapter;
 import com.xrzj.decoration.base.mvp.BasePresenter;
 import com.xrzj.decoration.base.mvp.BaseView;
+import com.xrzj.decoration.ui.other.find.model.bean.DesignerHotVO;
+
+import java.util.List;
 
 /**
  * @author: zhoufu
@@ -69,9 +72,14 @@ public interface FindDesignerContract {
         DelegateAdapter initRecyclerView(RecyclerView recyclerView);
 
         /**
-         * 初始化设计师等级列表栏Adapter
+         * 初始化设计师热门排行栏Adapter
          */
-        BaseDelegateAdapter initDesignerRankListAdapter();
+        BaseDelegateAdapter initDesignerHotListAdapter();
+
+        /**
+         * 获取设计师热门排行列表
+         */
+        List<DesignerHotVO> getDesignerHotList();
         /**
          * 初始化下拉框列表栏Adapter
          */

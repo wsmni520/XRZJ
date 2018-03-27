@@ -44,7 +44,7 @@
         </activity>
         <activity android:name=".ui.other.find.view.activity.FindDesignerActivity">
         </activity>
-        <activity android:name=".ui.other.find.view.activity.DesignerActivity">
+        <activity android:name=".ui.other.find.view.activity.DesignerInfoActivity">
         </activity>
         <activity android:name=".ui.other.order.view.activity.OrderManageActivity">
         </activity>

@@ -29,6 +29,7 @@
         </attr>
     </declare-styleable>
 
+    <!--找设计师头像-->
     <declare-styleable name="InsLoadingViewAttr">
         <attr name="rotate_duration" format="integer" />
         <attr name="circle_duration" format="integer" />
@@ -39,6 +40,24 @@
             <enum name="clicked" value="1" />
             <enum name="unclicked" value="2" />
         </attr>
+    </declare-styleable>
+
+    <!-- 自定义星星属性 -->
+    <declare-styleable name="star">
+        <!--星星数量-->
+        <attr format="integer" name="starsNum"/>
+        <!--星星宽度-->
+        <attr format="dimension" name="starWidth"/>
+        <!--星星高度-->
+        <attr format="dimension" name="starHeight"/>
+        <!--星星间距-->
+        <attr format="dimension" name="starDistance"/>
+        <!--星星背景-->
+        <attr format="reference" name="starBackground"/>
+        <!--星星变化背景-->
+        <attr format="reference" name="starDrawBackground"/>
+        <!--控件是否可以点击-->
+        <attr format="boolean" name="starClickable"/>
     </declare-styleable>
 
 </resources>

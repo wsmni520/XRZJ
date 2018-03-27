@@ -22,7 +22,7 @@
         android:layout_alignParentTop="true"/>
 
     <ImageView
-        android:id="@+id/designer_identification_iv"
+        android:id="@+id/designer_identification_tv"
         android:layout_marginLeft="5dp"
         android:layout_width="15dp"
         android:layout_height="15dp"
@@ -33,7 +33,7 @@
         android:layout_width="15dp"
         android:layout_height="15dp"
         android:layout_marginLeft="5dp"
-        android:layout_toRightOf="@+id/designer_identification_iv"
+        android:layout_toRightOf="@+id/designer_identification_tv"
         android:src="@mipmap/bg_small_lake_min"/>
 
     <TextView

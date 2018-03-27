@@ -4,6 +4,7 @@ package com.xrzj.decoration.base.observer;
 import android.util.Log;
 
 import com.xrzj.decoration.base.response.BaseResponse;
+import com.xrzj.decoration.base.response.BaseResult;
 
 import io.reactivex.Observer;
 import io.reactivex.disposables.Disposable;
@@ -14,7 +15,7 @@ import io.reactivex.disposables.Disposable;
  */
 
 
-public abstract class BaseObserver<T> implements Observer<BaseResponse<T>> {
+public abstract class BaseObserver<T> implements Observer<BaseResponse<BaseResult<T>>> {
 
     private static final String TAG = "BaseObserver";
 
@@ -24,10 +25,17 @@ public abstract class BaseObserver<T> implements Observer<BaseResponse<T>> {
     }
 
     @Override
-    public void onNext(BaseResponse<T> response) {
+    public void onNext(BaseResponse<BaseResult<T>> response) {
         if (response.isSuccess()) {
-            T t = response.getDetail();
-            onSuccess(t);
+            //获取网关响应数据
+            BaseResult<T> responseDetail = response.getDetail();
+            //获取业务响应数据
+            if(responseDetail.isSuccess()) {
+                T resultDetail = responseDetail.getDetail();
+                onSuccess(resultDetail);
+            } else {
+                onError(responseDetail.getDescription());
+            }
         } else {
             onError(response.getDescription());
         }

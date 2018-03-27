@@ -12,8 +12,13 @@ import java.util.List;
  */
 
 public interface IFindDesignerModel extends BaseModel{
+    //Demo
     List<Designer> getDesinerList(final AsyncCallback callBack);
     List<Designer> getDesginerRankList();
     List<Designer> getDesginerList();
     List<Renderings> getDesginerRederingsReList();
+
+    //------------------------------------------------------------//
+    void getDesginerHotList(final AsyncCallback callBack);
+
 }

@@ -4,44 +4,44 @@ import java.io.Serializable;
 
 /**
  * {"code": 0,"description": "ok","detail": {}}
- * 由于公司代码最外层都是这个格式，所以采用这个方式包裹
+ * 由于公司代码业务层返回都是这个格式，所以采用这个方式包裹
  *
  * @param <T>
  */
 public class BaseResult<T> implements Serializable {
-    private int code;
-    private String description;
-    private T detail;
-    private static int SUCCESS_CODE=200;
+    private int bizCode;
+    private String bizMessage;
+    private T bizData;
+    private static int SUCCESS_CODE=1;
 
 
 
     public int getCode() {
-        return code;
+        return bizCode;
     }
 
     public void setCode(int code) {
-        this.code = code;
+        this.bizCode = code;
     }
 
     public String getDescription() {
-        return description;
+        return bizMessage;
     }
 
     public void setDescription(String description) {
-        this.description = description;
+        this.bizMessage = description;
     }
 
     public T getDetail() {
-        return detail;
+        return bizData;
     }
 
     public void setDetail(T detail) {
-        this.detail = detail;
+        this.bizData = detail;
     }
 
     public boolean isSuccess() {
-        return code == SUCCESS_CODE;
+        return bizCode == SUCCESS_CODE;
     }
 
 }

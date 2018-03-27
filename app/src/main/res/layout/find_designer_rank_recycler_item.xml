@@ -10,7 +10,6 @@
         android:layout_width="58dp"
         android:layout_height="58dp"
         android:scaleType="centerCrop"
-        android:src="@mipmap/bg_small_magnolia_trees_min"
         app:status="unclicked"/>
 
     <TextView

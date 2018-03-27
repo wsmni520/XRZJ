@@ -3,6 +3,13 @@ package com.xrzj.decoration.utils;
 
 import com.xrzj.decoration.api.http.RetrofitFactory;
 
+import java.util.Map;
+
+import io.reactivex.Observable;
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.schedulers.Schedulers;
+import okhttp3.ResponseBody;
+
 /**
  * @author: zhoufu
  * @date: On 2018/3/5
@@ -37,16 +44,15 @@ public class RequestUtil {
     public static <T> T getCutomService(Class<T> clazz) {
         return RetrofitFactory.createRetrofitService(clazz);
     }
-////
-////    /**************************************post**************************************/
-////
-////    public static <T> void postDispose(String url, Map map, final IResponse<T> iResponse) {
-////
-////        Observable<ResponseBody> observable = RetrofitFactory.getInstance().executePost(url, map);
-////        observable.observeOn(AndroidSchedulers.mainThread())
-////                .subscribeOn(Schedulers.io())
-////                .subscribe(new BaseObserver<>(iResponse));
-////    }
+
+    /**************************************post**************************************/
+
+    public static <T> void postDispose(String url, Map map) {
+
+        Observable<ResponseBody> observable = RetrofitFactory.getInstance().executePost(url, map);
+        observable.observeOn(AndroidSchedulers.mainThread())
+                .subscribeOn(Schedulers.io());
+    }
 //
 //    private static <T> Observable<ResponseBody> postDispose(String url, Map map, final IResponse<T> iResponse, Map cacheMap) {
 //        Observable<ResponseBody> observable = RetrofitFactory.getInstance().executePost(url, map);

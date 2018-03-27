@@ -77,7 +77,7 @@ public class FindDesignerListAdapter extends BaseRecyclerViewAdapter<FindDesigne
         ImageView mLevelIv;
         @BindView(R.id.designer_name_tv)
         TextView mDesignerNameTv;
-        @BindView(R.id.designer_identification_iv)
+        @BindView(R.id.designer_identification_tv)
         TextView mDesignerIdentificationIv;
         @BindView(R.id.designer_safeguards_iv)
         TextView mDesignerSafeguardsIv;

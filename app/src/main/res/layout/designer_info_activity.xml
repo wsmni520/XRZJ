@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/back_text_two_image_title"></include>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="17dp"
+        android:paddingEnd="@dimen/blank_size"
+        android:paddingStart="@dimen/blank_size"
+        android:paddingTop="22dp">
+
+
+        <com.xrzj.decoration.widget.CircleImageView
+            android:id="@+id/designer_photo_iv"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:src="@mipmap/bg_small_magnolia_trees_min"/>
+
+        <RelativeLayout
+            android:id="@+id/designer_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/designer_photo_iv">
+
+            <TextView
+                android:id="@+id/designer_name_tv"
+                style="@style/SansBlodTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="李胜男"
+                android:textColor="@color/blod_black_text_color"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/designer_identification_tv"
+                style="@style/AuthenticationTextStyle"
+                android:layout_width="38dp"
+                android:layout_height="15dp"
+                android:layout_below="@+id/designer_name_tv"
+                android:layout_marginTop="18dp"
+                android:text="已认证"
+                android:textSize="10sp"/>
+
+            <TextView
+                android:id="@+id/designer_safeguards_iv"
+                style="@style/AuthenticationTextStyle"
+                android:layout_width="38dp"
+                android:layout_height="15dp"
+                android:layout_alignBaseline="@+id/designer_identification_tv"
+                android:layout_marginStart="9dp"
+                android:layout_toEndOf="@+id/designer_identification_tv"
+                android:text="保证金"
+                android:textSize="10sp"/>
+
+            <RelativeLayout
+                android:id="@+id/level_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@+id/designer_name_tv">
+
+                <ImageView
+                    android:id="@+id/level_iv"
+                    android:layout_width="49dp"
+                    android:layout_height="18dp"
+                    android:src="@mipmap/gold_medal_label"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/level_iv"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="6dp"
+                    android:text="LV15"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"/>
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/rmb_tv"
+                style="@style/SansBlodTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/designer_identification_tv"
+                android:layout_toStartOf="@+id/designer_per_price_tv"
+                android:includeFontPadding="false"
+                android:text="¥"
+                android:textColor="@color/red_text"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/designer_per_price_tv"
+                style="@style/SansBlodTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/designer_identification_tv"
+                android:layout_toStartOf="@+id/centiare_tv"
+                android:gravity="bottom"
+                android:includeFontPadding="false"
+                android:text="d%/"
+                android:textColor="@color/red_text"
+                android:textSize="20sp"/>
+
+
+            <TextView
+                android:id="@+id/centiare_tv"
+                style="@style/SansBlodTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/designer_identification_tv"
+                android:layout_toStartOf="@+id/price_info_iv"
+                android:includeFontPadding="false"
+                android:text="㎡"
+                android:textColor="@color/red_text"
+                android:textSize="17sp"/>
+
+            <ImageView
+                android:id="@+id/price_info_iv"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/designer_safeguards_iv"
+                android:layout_marginStart="7dp"
+                android:src="@drawable/title_question_ic"/>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/designer_ll"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp">
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/service_area_tv"
+            android:layout_alignStart="@+id/designer_ll">
+
+
+            <com.xrzj.decoration.widget.Star
+                android:id="@+id/designer_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                app:starBackground="@drawable/ic_star_ic"
+                app:starClickable="false"
+                app:starDistance="@dimen/designer_info_star_distance"
+                app:starDrawBackground="@drawable/ic_star_ic"
+                app:starHeight="@dimen/designer_info_star_height"
+                app:starWidth="@dimen/designer_info_star_width"
+                app:starsNum="5"/>
+
+            <TextView
+                android:id="@+id/favorable_tv"
+                style="@style/GraySmallTextStyle"
+                android:layout_marginStart="6dp"
+                android:layout_toEndOf="@+id/designer_star"
+                android:text="d%好评"
+                android:textColor="@color/blod_black_text_color"
+                android:textSize="12sp"/>
+
+
+        </RelativeLayout>
+
+
+        <View
+            style="@style/DeepUnderLine"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/designer_photo_iv"
+            android:layout_marginTop="21dp"/>
+
+        <TextView
+            android:id="@+id/service_area_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/designer_photo_iv"
+            android:layout_marginTop="39dp"
+            android:text="服务区域：武昌区、洪山区、江夏区"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/service_area_tv"
+            android:layout_marginTop="14dp"
+            android:text="擅长风格：地中海、中式、美式、欧式、混搭"
+            android:textSize="15dp"/>
+
+    </RelativeLayout>
+
+
+    <android.support.design.widget.TabLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/desiner_info_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="7dp"
+        android:background="@color/white"
+        app:tabIndicatorColor="@color/green_text_color"
+        app:tabSelectedTextColor="@color/blod_black_text_color"
+        app:tabTextColor="@color/gray_small_text_color"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/desiner_info_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_bg"/>
+</LinearLayout>

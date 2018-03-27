@@ -62,7 +62,7 @@ public class DesignerCollectionListAdapter extends BaseRecyclerViewAdapter<Desig
         CircleImageView mDesignerPhotoIv;
         @BindView(R.id.designer_name_tv)
         TextView mDesignerNameTv;
-        @BindView(R.id.designer_identification_iv)
+        @BindView(R.id.designer_identification_tv)
         ImageView mDesignerIdentificationIv;
         @BindView(R.id.designer_Safeguards_iv)
         ImageView mDesignerSafeguardsIv;

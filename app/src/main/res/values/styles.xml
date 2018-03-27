@@ -99,11 +99,12 @@
         <item name="android:maxLines">3</item>
     </style>
 
+    <!--宋体加粗-->
     <style name="SansBlodTextStyle">
         <item name="android:textStyle">bold</item>
-        <item name="android:typeface">sans</item>
     </style>
 
+    <!--灰色小字体-->
     <style name="GraySmallTextStyle">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -111,6 +112,7 @@
         <item name="android:textSize">12sp</item>
     </style>
 
+    <!--标题样式-->
     <style name="TitleStyle">
         <item name="android:textSize">18sp</item>
         <item name="android:textColor">@color/blod_black_text_color</item>
@@ -119,6 +121,7 @@
         <item name="android:gravity">center</item>
     </style>
 
+    <!--等级文字样式-->
     <style name="LevelTextViewStyle">
         <item name="android:layout_weight">1</item>
         <item name="android:textColor">@drawable/level_tv_text_selector</item>
@@ -129,11 +132,19 @@
         <item name="android:textSize">14sp</item>
     </style>
 
+    <!--排序popup文字样式-->
     <style name="SortPopTextStyle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">55dp</item>
         <item name="android:gravity">center</item>
         <item name="android:textSize">16sp</item>
+    </style>
+
+    <!--已认证、已交保证金字体样式-->
+    <style name="AuthenticationTextStyle">
+        <item name="android:background">@drawable/faverate_circle_shape</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/green_text_color</item>
     </style>
 
 

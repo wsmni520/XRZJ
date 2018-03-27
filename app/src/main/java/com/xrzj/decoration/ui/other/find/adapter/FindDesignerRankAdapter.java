@@ -1,14 +1,16 @@
 package com.xrzj.decoration.ui.other.find.adapter;
 
+import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.xrzj.decoration.R;
 import com.xrzj.decoration.base.adapter.BaseRecyclerViewAdapter;
-import com.xrzj.decoration.ui.other.find.model.bean.Designer;
+import com.xrzj.decoration.ui.other.find.model.bean.DesignerHotVO;
 import com.xrzj.decoration.widget.HeadPhotoStatusView;
 
 import java.util.List;
@@ -23,10 +25,13 @@ import butterknife.ButterKnife;
 
 public class FindDesignerRankAdapter extends BaseRecyclerViewAdapter<FindDesignerRankAdapter.ViewHolder> {
 
-    private List<Designer> mDesigners;
+    private final Context mContext;
+    private List<DesignerHotVO> mDesigners;
 
-    public FindDesignerRankAdapter(List<Designer> designers) {
+
+    public FindDesignerRankAdapter(Context context,List<DesignerHotVO> designers) {
         this.mDesigners = designers;
+        mContext = context;
     }
 
     @Override
@@ -37,7 +42,7 @@ public class FindDesignerRankAdapter extends BaseRecyclerViewAdapter<FindDesigne
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        holder.mDesignerPhotoIv.setImageResource(R.mipmap.bg_small_magnolia_trees_min);
+        Glide.with(mContext).load(mDesigners.get(position).getPicture()).into(holder.mDesignerPhotoIv);
         holder.mDesignerNameTv.setText(mDesigners.get(position).getName());
     }
 
